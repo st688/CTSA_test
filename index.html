@@ -15,9 +15,11 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/Top-Bar.js"></script>
+<script src="js/Content.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/Top-Bar.css">
 <link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/news.css" id="Page_css">
 
 </head>
 
@@ -31,11 +33,11 @@
 <!-- 導覽列 -->
 <div id="Top-Bar"><ul class="Menu-Bar">
 <center>
-   <li><a href="history.html">
+   <li><a <a href="news" onclick="return loadContent(this.href);">
    <div class="Top-Bar-Buttons"> 活動訊息 </div>
    </a></li>
    <li><div class="Top-Bar-Buttons"> 新生手冊 </div></li>
-   <li><a href="history.html">
+   <li><a href="history" onclick="return loadContent(this.href);">
    <div class="Top-Bar-Buttons"> CTSA歷史 </div>
    </a></li>
    <li><div class="Top-Bar-Buttons"> 工作團隊 </div></li>
@@ -43,7 +45,17 @@
 </center>
 </ul></div>
 
+<!-- 內文區 -->
+<div id="Content">
 <p> HTML5 test </p>
+</div>
+
+<!-- 頁尾 -->
+<div id="Copyright">
+<p>
+Copyright © 2014 CTSA, All Rights Reserved.
+</p>
+</div>
 
 </body>
 
