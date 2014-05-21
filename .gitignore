@@ -1,4 +1,6 @@
 # ignore the temporary files
+test.html
+jQuery.js
 *.html~
 *.css~
 *.js~
