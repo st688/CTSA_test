@@ -2,7 +2,7 @@
 function loadContent(page) {
    $.get("pages/" + page + ".html", function(data) {
       $('#Content').html(data);
-      $('#Page_css').attr("href", "css/" + page + ".css");
+      $('#Page_css').href = "css/" + page + ".css";
    });
    return false;
 }
