@@ -1,0 +1,4 @@
+# ignore the temporary files
+*.html~
+*.css~
+*.js~

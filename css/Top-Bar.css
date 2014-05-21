@@ -1,0 +1,59 @@
+/*
+ 標題Logo樣式 
+*/
+#TopLogo{
+   margin:10px;
+   height:140px;
+   width:100%;
+   background-color:white;
+   text-align:center;
+}
+
+/*
+ 導覽列本體
+*/
+#Top-Bar{
+   margin:0;
+   height:80px;
+   width:100%;
+   background-color:#CC0033;
+   text-align:center;
+
+   font-family: Microsoft JhengHei, PMingLiU, Apple LiSung;
+}
+
+/*
+ 導覽列列舉的外包裝
+*/
+.Menu-Bar{
+   margin:0;
+   padding:0;
+   list-style-type:none;
+}
+
+/*
+ 列舉導覽內容的按鍵
+*/
+.Menu-Bar li{
+   height:80px;
+   width:160px;
+   display:table-cell;
+   text-align:center;
+   vertical-align:middle;
+}
+
+/*
+ 讓超連結不要有底線跟變色
+*/
+.Menu-Bar a:link   {text-decoration:none;}
+.Menu-Bar a:visited{text-decoration:none;}
+.Menu-Bar a:hover  {text-decoration:none;}
+.Menu-Bar a:active {text-decoration:none;}
+
+/*
+ 每個按鍵的樣式
+*/
+.Top-Bar-Buttons{
+   color:white;
+   font-size:150%;
+}
