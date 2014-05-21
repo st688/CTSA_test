@@ -1,4 +1,5 @@
 # ignore the temporary files
+test.html
 *.html~
 *.css~
 *.js~
