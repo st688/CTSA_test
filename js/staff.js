@@ -46,10 +46,16 @@ function loadStaff(yeartag) {
 function initStaff(){
    var latest, decade, year_min, year_max;
    $.get("pages/staff/years", function(data) {
-alert(data);
       latest = $('latest',data).text();
-alert(latest);
       loadStaff("s"+latest);
+
+      var html_stack = "";
+      $('decade',data).each(function(){
+         decade   = parseInt($(this).find('v').text());
+         year_min = parseInt($(this).find('min').text());
+         year_max = parseInt($(this).find('max').text());
+alert(decade * 10 + year_min + year_max);
+      });
    });
 }
 
