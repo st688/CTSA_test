@@ -10,6 +10,6 @@ $(function(){
             $('#Top-Bar').css('position','fixed')
                          .css('top', 0 );
          }
-      }).scroll();
+      });
    });
 });
