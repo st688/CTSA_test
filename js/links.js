@@ -9,11 +9,10 @@ function loadLinks() {
          a = $(this).find('a').text(); // 網址
 
          // 生成連結
-         html_stack = html_stack 
-                    + "<div class='link'>\n"
-                    + "   <div class='title'>" + t + "</div>\n"
-                    + "   <div class='href'><a href=\"" + a + "\">" + a + "</a></div>\n"
-                    + "</div>\n";
+         html_stack += "<div class='link'>\n"
+                     + "   <div class='title'>" + t + "</div>\n"
+                     + "   <div class='href'><a href=\"" + a + "\">" + a + "</a></div>\n"
+                     + "</div>\n";
 
       });
       $('#Links').html(html_stack);
