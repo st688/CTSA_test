@@ -1,13 +1,7 @@
 function loadStaff(yeartag) {
-   var staff_data;
-   alert("sta1");
    $.get("pages/staff/" + yeartag, function(data) {
-      staff_data = data;
-      $('#Staff').html(staff_data);
-   alert("sta2");
+      $('#Staff').html(data);
    });
-   alert("sta3");
-
 }
 
 function initStaff(){
