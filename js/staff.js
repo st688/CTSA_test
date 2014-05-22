@@ -9,4 +9,4 @@ function loadStaff(yeartag) {
    $('#Staff').html(staff_data);
 }
 
-addLoadEvent(function(){loadStaff("s2014_15");});
+addLoadEvent(function(){alert("a1");loadStaff("s2014_15");alert("a2");});
