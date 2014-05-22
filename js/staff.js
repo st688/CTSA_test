@@ -32,7 +32,7 @@ function loadStaff(yeartag) {
             }
             html_stack = html_stack + "</div>\n</div>\n<div id='MemberPhoto'>"
                                     + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" 
-                                    + i + ".jpg\" />";
+                                    + i + ".jpg\" />"
                                     + "</div>\n</div>\n";
          });
          html_stack = html_stack + "</div>\n";
