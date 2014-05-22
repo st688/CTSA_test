@@ -2,12 +2,12 @@ function loadStaff(yeartag) {
    $.get("pages/staff/" + yeartag, function(data) {
 alert("asdf");
       // 預備輸出的html
-      var html_raw = html(data);
+      var xml_raw = $.parseXML(data);
       var html_stack = "";
 
       // data內容的定義如staff/README
 alert(html_raw);
-      var p  = html_raw.getElementsByTagName('p');
+      var p  = xml_raw.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
 alert("23");
