@@ -2,6 +2,8 @@
 function loadContent(page) {
    $.get("pages/" + page + ".html", function(data) {
       $('#Content').html(data);
+      // 回到頂部
+      $("html, body").animate({ scrollTop: 0 }, 500);
    });
    return false;
 }
