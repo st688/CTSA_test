@@ -4,5 +4,9 @@
 }
 
 #Links{
+   width:80%;
+}
+
+#Links div{
    text-align:left;
 }
