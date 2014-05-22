@@ -1,23 +1,81 @@
-<div><p> 2012 </p>
-   <ul><p>會長</p>
-   <li>陳君睿</li>
-   </ul>
+<d>
+<y> 2013-2014 </y>
 
-   <ul><p>副會長</p>
-   <li>鍾辰陽</li> 
-   </ul>
+<p> 
+   <tc>指導老師</tc>
+   <te>Faculty Advisor</te>
+   <m>
+      <c>張永富教授</c>
+      <e>Prof. Yung-Fu Chang</e>
+      <a>Population Medicine & Diagnostic Sciences</a>
+      <i>yc42</i>
+   </m>
+</p>
+      
 
-   <ul><p>網管</p>
-   <li>彭冠詮</li> 
-   </ul>
+<p> 
+   <tc>會長</tc>
+   <te>Co-President</te>
+   <m>
+      <c>陳君睿</c>
+      <e>Jiun-Ruey Chen</e>
+      <a>CBE</a>
+      <i>jc2642</i>
+   </m>
+</p>
 
-   <ul><p>財務</p>
-   <li>何率慈</li> 
-   </ul>
+<p> 
+   <tc>副會長</tc>
+   <te>Co-President</te>
+   <m>
+      <c>鍾辰陽</c>
+      <e>Chen-Yang Chung</e>
+      <a>MSE</a>
+      <i>cc2276</i>
+   </m>
+</p>
 
-   <ul><p>活動</p>
-   <li>許書睿</li> 
-   <li>黃慧珊</li>
-   <li>李玓娜</li>
-   </ul>
-</div>
+<p> 
+   <tc>網管</tc>
+   <te>Webmaster</te>
+   <m>
+      <c>彭冠銓</c>
+      <e>Kuan-Chuan Peng</e>
+      <a>ECE</a>
+      <i>kp388</i>
+   </m>
+</p>
+
+<p> 
+   <tc>財務</tc>
+   <te>Treasurer</te>
+   <m>
+      <c>何率慈</c>
+      <e>Shuay-Tsyr Ho</e>
+      <a>AEM</a>
+      <i>sh756</i>
+   </m>
+</p>
+
+<p> 
+   <tc>活動</tc>
+   <te>Social Chair</te>
+   <m>
+      <c>李玓娜</c>
+      <e>Tina Lee</e>
+      <a>MPS</a>
+      <i>tl536</i>
+   </m>
+   <m>
+      <c>黃慧珊</c>
+      <e>Ginny Huang</e>
+      <a>MLA</a>
+      <i>hh485</i>
+   </m>
+   <m>
+      <c>許書睿</c>
+      <e>Lindy Hsu</e>
+      <a>ILR</a>
+      <i>sh878</i>
+   </m>
+</p>
