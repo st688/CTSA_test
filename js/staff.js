@@ -1,15 +1,14 @@
 function loadStaff(yeartag) {
-alert("333");
    $.get("pages/staff/" + yeartag, function(data) {
-alert("223");
       // 預備輸出的html
       var html_stack = "";
 
-alert("123");
-
       // data內容的定義如staff/README
+alert(data);
       var p  = data.getElementsByTagName('p');
+alert("123");
       var p_len = p.length;
+alert("223");
       var tc, te, m, m_len, c, e, a, i, em;
 alert(html_stack+"now p = " + p_len);
       // 生成職位資料
