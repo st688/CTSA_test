@@ -1,6 +1,35 @@
 function loadStaff(yeartag) {
    $.get("pages/staff/" + yeartag, function(data) {
-      $('#Staff').html(data);
+      // 預備輸出的html
+      var html_stack = "";
+
+      // data內容的定義如staff/README
+      var p  = data.getElementsByTagName('p');
+      var p_len = p.length;
+      var tc, te, m, m_len, c, e, a, i, em;
+      // 生成職位資料
+      for( var k = 0; k < p_len; ++k){
+         tc = p[k].getElementsByTagName('tc');
+         te = p[k].getElementsByTagName('te');
+         html_stack = html_stack + "<div>" + tc[0] + te[0] + "</div>\n"
+         m  = p[k].getElementsByTagName('m');
+         m_len = m.length;
+
+         // 生成個人資料
+         for( var j = 0; j < m_len; ++j){
+            html_stack = html_stack + "<div>";
+            c  = m[j].getElementsByTagName('c');
+            e  = m[j].getElementsByTagName('e');
+            a  = m[j].getElementsByTagName('a');
+            html_stack = html_stack + c[0] + e[0];
+            i  = m[j].getElementsByTagName('i');
+            html_stack = html_stack + "<img onerror=\"this.src='images/noImg.jpg'\" src=\"images/" + i + ".jpg\" />";
+            em = m[j].getElementsByTagName('em');
+            html_stack = html_stack + "</div>\n";
+         }
+      }
+
+      $('#Staff').html(html_stack);
    });
 }
 
