@@ -11,7 +11,6 @@ function loadStaff(yeartag) {
          html_stack = html_stack + "<div>" + tc + te + "</div>\n";
 
          $('m',$(this)).each(function(){
-alert("as2");
             // 生成個人資料
             html_stack = html_stack + "<div>";
             c = $(this).find('c').text();
@@ -19,12 +18,11 @@ alert("as2");
             html_stack = html_stack + c + e + a;
             a = $(this).find('a').text();
             i = $(this).find('i').text();
-            html_stack = html_stack + "<img onerror=\"this.src='images/noImg.jpg'\" src=\"images/" + i + ".jpg\" />";
+            html_stack = html_stack + "<img onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
             em = $(this).find('em').text();
             html_stack = html_stack + "</div>\n";
          });
       });
-alert("as5");
       $('#Staff').html(html_stack);
    });
 }
