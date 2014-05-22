@@ -4,7 +4,7 @@ function loadStaff(yeartag) {
       var html_stack = "";
 alert(data);
       // data內容的定義如staff/README
-      $('p',data).each(function(k){
+      $('p',data).each(function(){
          var tc, te, m, m_len, c, e, a, i, em;         
          // 生成職位資料
 alert("as2");
@@ -34,7 +34,7 @@ alert("as5");
 }
 
 function initStaff(){
-   loadStaff("s2014_15");
+   loadStaff("s2014_15.xml");
 }
 
 addLoadEvent(initStaff());
