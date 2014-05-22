@@ -1,5 +1,5 @@
 function loadStaff(yeartag) {
-   $.get("pages/staff/" + yeartag, function(data) {
+   $.get("pages/staff/" + yeartag + ".xml", {}, function(data) {
       // 預備輸出的html
       var html_stack = "";
 alert(data);
@@ -34,7 +34,7 @@ alert("as5");
 }
 
 function initStaff(){
-   loadStaff("s2014_15.xml");
+   loadStaff("s2014_15");
 }
 
 addLoadEvent(initStaff());
