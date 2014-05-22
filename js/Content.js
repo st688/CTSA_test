@@ -3,7 +3,7 @@ function loadContent(page) {
    $.get("pages/" + page + ".html", function(data) {
       $('#Content').html(data);
       // 回到頂部
-      $("html, body").stop().animate({ scrollTop: 0 }, 5000);
+      $("html, body").scrollTop(0);
    });
    return false;
 }
