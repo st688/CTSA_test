@@ -17,12 +17,13 @@
 }
 
 #Member{
-   width:400px;
+   width:300px;
    display:inline-block;
 }
 #MemberDescription{
-   width:300px;
+   width:200px;
    float:right;
+   word-wrap:break-word;
 }
 #ChineseName{
 }
