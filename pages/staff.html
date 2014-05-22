@@ -1,4 +1,16 @@
-<script src="js/staff.js"></script>
+<!-- <script src="js/staff.js"></script> -->
+<script type="text/javascript">
+function loadStaff(yeartag) {
+   var staff_data;
+   $.get("pages/staff/" + yeartag, function(data) {
+      staff_data = data;
+   });
+   $('#Staff').html(staff_data);
+}
+
+addLoadEvent(loadStaff("s2014-15"));
+</script>
+
 <link rel="stylesheet" type="text/css" href="css/staff.css" />
 
 <div> 
