@@ -15,6 +15,7 @@
 
 #Member{
    width:400px;
+   display:inline-block;
 }
 #MemberDescription{
    width:300px;
