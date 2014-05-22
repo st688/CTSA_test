@@ -4,8 +4,7 @@ function loadStaff(yeartag) {
       var html_stack = "";
 alert("as1");
       // data內容的定義如staff/README
-
-      $('p',data).each(function(){
+      $("p",data).each(function(){
          var tc, te, m, m_len, c, e, a, i, em;         
          // 生成職位資料
 alert("as2");
