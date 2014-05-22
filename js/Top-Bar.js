@@ -1,6 +1,6 @@
 // 讓導覽列往下捲之後定在最上方的程式碼
 $(function(){
-   //$(window).load(function(){
+   $(window).load(function(){
       $(window).bind('scroll', function(){
          //當高度大於150時，Top Bar fixed at top 
          if($(this).scrollTop() < 150){
@@ -11,5 +11,5 @@ $(function(){
                          .css('top', 0 );
          }
       });
-   //});
+   });
 });
