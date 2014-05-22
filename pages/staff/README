@@ -1,5 +1,6 @@
 檔案內容解析
 
+<d>  = data          // 檔案起始
 <y>  = year          // 服務年份
 <p>  = position      // 職位
 <tc> = Chinese title // 中文職稱
