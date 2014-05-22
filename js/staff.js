@@ -1,14 +1,13 @@
 function loadStaff(yeartag) {
-alert("123");
-   var data = loadXMLDoc("pages/staff/" + yeartag);
-alert(data);
-   //$.get("pages/staff/" + yeartag, function(data) {
+   $.get("pages/staff/" + yeartag, function(data) {
+alert("asdf");
       // 預備輸出的html
+      var html_raw = html(data);
       var html_stack = "";
 
       // data內容的定義如staff/README
-
-      var p  = data.getElementsByTagName('p');
+alert(html_raw);
+      var p  = html_raw.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
 alert("23");
@@ -38,7 +37,7 @@ alert(html_stack);
       }
 alert(html_stack);
       $('#Staff').html(html_stack);
-   //});
+   });
 }
 
 function initStaff(){
