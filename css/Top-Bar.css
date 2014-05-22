@@ -67,7 +67,7 @@
 */
 #Top-Bar-Fix{
    height:80px;
-   visibility:hidden;
+   display:none;
 }
 
 
