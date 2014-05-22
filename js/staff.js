@@ -6,4 +6,4 @@ function loadStaff(yeartag) {
    $('#Staff').html(staff_data);
 }
 
-addLoadEvent(loadStaff("s2014-15"));
+addLoadEvent(loadStaff("s2014_15"));
