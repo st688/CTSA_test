@@ -1,21 +1,17 @@
 function loadStaff(yeartag) {
    $.get("pages/staff/" + yeartag, function(data) {
-alert("asd");
       // 預備輸出的html
       var html_stack = "";
-alert(data);
       // data內容的定義如staff/README
       $('p',data).each(function(){
          var tc, te, m, m_len, c, e, a, i, em;         
          // 生成職位資料
-alert("as2");
          tc = $(this).find('tc').text();
-alert("as3");
          te = $(this).find('te').text();
          html_stack = html_stack + "<div>" + tc + te + "</div>\n";
-alert("as4");
-/*
+
          $('m',$(this)).each(function(){
+alert("as2");
             // 生成個人資料
             html_stack = html_stack + "<div>";
             c = $(this).find('c').text();
@@ -27,7 +23,6 @@ alert("as4");
             em = $(this).find('em').text();
             html_stack = html_stack + "</div>\n";
          });
-*/
       });
 alert("as5");
       $('#Staff').html(html_stack);
