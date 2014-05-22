@@ -15,10 +15,10 @@ function loadStaff(yeartag) {
             html_stack = html_stack + "<div>";
             c = $(this).find('c').text();
             e = $(this).find('e').text();
-            html_stack = html_stack + c + e + a;
             a = $(this).find('a').text();
+            html_stack = html_stack + c + e + a;
             i = $(this).find('i').text();
-            html_stack = html_stack + "<img onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
+            html_stack = html_stack + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
             em = $(this).find('em').text();
             html_stack = html_stack + "</div>\n";
          });
