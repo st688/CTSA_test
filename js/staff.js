@@ -15,7 +15,7 @@ function loadStaff(yeartag) {
                                  + "<div id='EnglishTitle'>" + te + "</div>\n";
          $('m',$(this)).each(function(){
             // 生成個人資料
-            html_stack = html_stack + "<div id='Member'>\n";
+            html_stack = html_stack + "<div id='Member'>\n<div id='MemberDescription'>\n";
             c = $(this).find('c').text();
             e = $(this).find('e').text();
             a = $(this).find('a').text();
@@ -23,7 +23,6 @@ function loadStaff(yeartag) {
                                     + "<div id='EnglishName'>" + e + "</div>\n"
                                     + "<div id='Major'>"       + a + "</div>\n";
             i = $(this).find('i').text();
-            html_stack = html_stack + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
             em = $(this).find('em').text();
             html_stack = html_stack + "<div id='EMail'>";
             if(em == ""){
@@ -31,7 +30,10 @@ function loadStaff(yeartag) {
             } else {
                html_stack = html_stack + "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
-            html_stack = html_stack + "</div>\n</div>\n";
+            html_stack = html_stack + "</div>\n</div>\n<div id='MemberPhoto'>"
+                                    + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" 
+                                    + i + ".jpg\" />";
+                                    + "</div>\n</div>\n";
          });
          html_stack = html_stack + "</div>\n";
       });

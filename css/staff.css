@@ -4,10 +4,32 @@
    list-style-type:none;
 }
 
-#Content div ul li{
-   width:50px;
-   display:table-cell;
-   text-align:center;
-   vertical-align:middle;
+#Position{
+   margin:0;
+   width:80%;
+}
+#ChineseTitle{
+}
+#EnglishTitle{
 }
 
+#Member{
+   width:400px;
+   display:table-cell;
+}
+#MemberDescription{
+   width:300px;
+   float:right;
+}
+#ChineseName{
+}
+#EnglishName{
+}
+#Major{
+}
+#EMail{
+}
+#MemberPhoto{
+   width:100px;
+   float:left;
+}
