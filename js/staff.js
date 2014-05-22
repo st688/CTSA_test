@@ -1,7 +1,11 @@
 function loadStaff(yeartag) {
+alert("333");
    $.get("pages/staff/" + yeartag, function(data) {
+alert("223");
       // 預備輸出的html
       var html_stack = "";
+
+alert("123");
 
       // data內容的定義如staff/README
       var p  = data.getElementsByTagName('p');
