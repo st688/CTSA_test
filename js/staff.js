@@ -6,7 +6,7 @@ alert("asdf");
       var html_stack = "";
 
       // data內容的定義如staff/README
-alert(html_raw);
+alert(xml_raw);
       var p  = xml_raw.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
