@@ -20,6 +20,11 @@ function loadStaff(yeartag) {
             i = $(this).find('i').text();
             html_stack = html_stack + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
             em = $(this).find('em').text();
+            if(em == ""){
+               html_stack = html_stack + "<a href=\"mailto:"+i+"@cornell.edu\""+i+"@cornell.edu</a>";
+            } else {
+               html_stack = html_stack + "<a href=\"mailto:"+em+"\""+em+"</a>";
+            }
             html_stack = html_stack + "</div>\n";
          });
       });
