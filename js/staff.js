@@ -5,28 +5,35 @@ function loadStaff(yeartag) {
       // data內容的定義如staff/README
       $('p',data).each(function(){
          var tc, te, m, m_len, c, e, a, i, em;         
+
          // 生成職位資料
+         html_stack = html_stack + "<div id='Position'>\n";
          tc = $(this).find('tc').text();
          te = $(this).find('te').text();
-         html_stack = html_stack + "<div>" + tc + te + "</div>\n";
 
+         html_stack = html_stack + "<div id='ChineseTitle'>" + tc + "</div>\n"
+                                 + "<div id='EnglishTitle'>" + te + "</div>\n";
          $('m',$(this)).each(function(){
             // 生成個人資料
-            html_stack = html_stack + "<div>";
+            html_stack = html_stack + "<div id='Member'>\n";
             c = $(this).find('c').text();
             e = $(this).find('e').text();
             a = $(this).find('a').text();
-            html_stack = html_stack + c + e + a;
+            html_stack = html_stack + "<div id='ChineseName'>" + c + "</div>\n"
+                                    + "<div id='EnglishName'>" + e + "</div>\n"
+                                    + "<div id='Major'>"       + a + "</div>\n";
             i = $(this).find('i').text();
             html_stack = html_stack + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" + i + ".jpg\" />";
             em = $(this).find('em').text();
+            html_stack = html_stack + "<div id='EMail'>";
             if(em == ""){
                html_stack = html_stack + "<a href=\"mailto:"+i+"@cornell.edu\">"+i+"@cornell.edu</a>";
             } else {
                html_stack = html_stack + "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
-            html_stack = html_stack + "</div>\n";
+            html_stack = html_stack + "</div>\n</div>\n";
          });
+         html_stack = html_stack + "</div>\n";
       });
       $('#Staff').html(html_stack);
    });
