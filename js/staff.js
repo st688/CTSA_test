@@ -2,12 +2,14 @@
 function loadXMLFile(file){
    var xmlDoc;
    if (window.ActiveXObject){
+alert("l1");
       // 這ㄧ個判斷式是針對IE，判斷是不是支援ActiveXObject 這個物件
       xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
       xmlDoc.async = false;
       xmlDoc.load(file);
       return xmlDoc;
    } else if (document.implementation && document.implementation.createDocument){
+alert("l2");
       // 這個判斷針對非IE瀏覽器設置，判斷是不是能夠處理DOM模型物件
       var xmlInfo = new XMLHttpRequest();
       xmlInfo.open("GET", file, false);
