@@ -1,6 +1,6 @@
 function loadStaff(yeartag) {
 alert("asd");
-   $.get("pages/staff/" + yeartag + ".xml", {}, function(data) {
+   $.get("pages/staff/" + yeartag + ".xml", function(data) {
 alert("asd");
       // 預備輸出的html
       var html_stack = "";
