@@ -61,8 +61,8 @@ function initStaff(){
 
          for(var i = year_min; i < year_max + 1; ++i){
             init = decade * 10 + i;
-            html_stack += "<li><a href=\"#\" onclick=\"return loadStaff(s" 
-                        + init + "_" + (i+1) + ");\">" + init + "-" + (init + 1) + "</a></li>\n";
+            html_stack += "<li><a href=\"#\" onclick=\"return loadStaff(\"s" 
+                        + init + "_" + (i+1) + "\");\">" + init + "-" + (init + 1) + "</a></li>\n";
          }
       });
       $('#TimeLineDecade').html(html_stack);
