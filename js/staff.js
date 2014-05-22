@@ -44,7 +44,12 @@ function loadStaff(yeartag) {
 }
 
 function initStaff(){
-   loadStaff("s2014_15");
+   var latest, decade, year_min, year_max;
+   $.get("pages/staff/years", function(data) {
+      latest = $('y',data).find('latest');
+
+      loadStaff("s"+latest);
+   });
 }
 
 addLoadEvent(initStaff());

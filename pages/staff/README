@@ -1,6 +1,14 @@
 檔案內容解析
 
+years檔案：
 <d>  = data          // 檔案起始
+<latest>             // 目前的幹部年份，(起始西元年)_(結束西元年個位)
+<decade>             // 十年份資料
+<v>  = value         // 西元年 mod 10 的值
+<min>                // 有資料最小的起始西元年個位
+<max>                // 有資料最大的起始西元年個位
+
+s檔案：
 <y>  = year          // 服務年份
 <p>  = position      // 職位
 <tc> = Chinese title // 中文職稱
