@@ -48,7 +48,7 @@ function initStaff(){
    $.get("pages/staff/years", function(data) {
 alert(data);
       latest = $('latest',data);
-
+alert(latest);
       loadStaff("s"+latest);
    });
 }
