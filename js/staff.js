@@ -47,8 +47,8 @@ function initStaff(){
    var latest, decade, year_min, year_max;
    $.get("pages/staff/years", function(data) {
 alert(data);
-      latest = $('latest',data);
-alert(latest[0]);
+      latest = $('latest',data).text();
+alert(latest);
       loadStaff("s"+latest);
    });
 }
