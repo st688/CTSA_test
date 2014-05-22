@@ -1,13 +1,33 @@
+// 判斷瀏覽器是否支援 javascript 讀取 XML 的功能，摘自http://newaurora.pixnet.net/blog/post/168003699-javascript%E8%AE%80%E5%8F%96xml
+function loadXMLFile(file){
+   var xmlDoc;
+   if (window.ActiveXObject){
+      // 這ㄧ個判斷式是針對IE，判斷是不是支援ActiveXObject 這個物件
+      xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
+      xmlDoc.async = false;
+      xmlDoc.load(file);
+      return xmlDoc;
+   } else if (document.implementation && document.implementation.createDocument){
+      // 這個判斷針對非IE瀏覽器設置，判斷是不是能夠處理DOM模型物件
+      var xmlInfo = new XMLHttpRequest();
+      xmlInfo.open("GET", file, false);
+      xmlInfo.send(null); 
+      xmlDoc = xmlInfo.responseXML;
+      return xmlDoc;
+   } else {
+      alert("您的瀏覽器不支援Javascript!! ");
+   }
+}
+
 function loadStaff(yeartag) {
-   $.get("pages/staff/" + yeartag, function(data) {
-alert("asdf");
+   var xml_data = loadXMLFile("pages/staff/" + yeartag);
+//   $.get("pages/staff/" + yeartag, function(data) {
       // 預備輸出的html
-      var xml_raw = $.parseXML(data);
       var html_stack = "";
 
       // data內容的定義如staff/README
-alert(xml_raw);
-      var p  = xml_raw.getElementsByTagName('p');
+alert("asdf2");
+      var p  = xml_data.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
 alert("23");
@@ -37,7 +57,7 @@ alert(html_stack);
       }
 alert(html_stack);
       $('#Staff').html(html_stack);
-   });
+//   });
 }
 
 function initStaff(){
