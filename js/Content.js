@@ -8,18 +8,24 @@ function loadContent(page) {
 
 // 增加初次載入頁面要做的工作
 function addLoadEvent(func) {
+   alert("add1");
    // 先確認目前有沒有已經要做的工作
    var oldOnload = window.onload;
+   alert("add2");
    if (typeof window.onload != 'function') {
       // 沒有的話執行新工作
       window.onload = func;
+   alert("add3");
    } else {
       // 有的話先做舊的再做新的
+   alert("add4");
       window.onload = function() {
          if (oldOnload) {
             oldOnload();
          }
+   alert("add5");
          func();
+   alert("add6");
       }
    }
 }

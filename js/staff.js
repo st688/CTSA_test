@@ -1,10 +1,11 @@
 function loadStaff(yeartag) {
    var staff_data;
-   $('#Staff').html("Load pages/staff/" + yeartag)
+   alert("sta1");
    $.get("pages/staff/" + yeartag, function(data) {
       staff_data = data;
-      $('#Staff').html("Got pages/staff/" + yeartag)
+   alert("sta2");
    });
+   alert("sta3");
    $('#Staff').html(staff_data);
 }
 
