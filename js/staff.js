@@ -1,14 +1,17 @@
 function loadStaff(yeartag) {
-   $.get("pages/staff/" + yeartag, function(data) {
+alert("123");
+   var data = loadXMLDoc("pages/staff/" + yeartag);
+alert(data);
+   //$.get("pages/staff/" + yeartag, function(data) {
       // 預備輸出的html
       var html_stack = "";
 
       // data內容的定義如staff/README
-alert(data);
+
       var p  = data.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
-alert("223");
+alert("23");
       var tc, te, m, m_len, c, e, a, i, em;
 alert(html_stack+"now p = " + p_len);
       // 生成職位資料
@@ -35,7 +38,7 @@ alert(html_stack);
       }
 alert(html_stack);
       $('#Staff').html(html_stack);
-   });
+   //});
 }
 
 function initStaff(){
