@@ -5,9 +5,11 @@ $(function(){
       if($(this).scrollTop() < 150){
          $('#Top-Bar').css('position','static')
                       .css('top', 'auto' );
+         $('#Top-Bar-Fix').css('visibility','hidden');
       }else{
          $('#Top-Bar').css('position','fixed')
                       .css('top', 0 );
+         $('#Top-Bar-Fix').css('visibility','visible');
       }
    });
 });

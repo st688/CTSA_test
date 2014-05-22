@@ -61,3 +61,13 @@
    color:white;
    font-size:150%;
 }
+
+/*
+ 修正導覽列定在上方時的平滑捲動
+*/
+#Top-Bar-Fix{
+   height:80px;
+   visibility:hidden;
+}
+
+
