@@ -1,0 +1,14 @@
+檔案內容解析
+
+<y>  = year          // 服務年份
+<p>  = position      // 職位
+<tc> = Chinese title // 中文職稱
+<te> = English title // 英文職稱
+<m>  = member        // 成員
+<c>  = Chinese name  // 中文姓名
+<e>  = English name  // 英文姓名
+<a>  = major         // 主修
+<i>  = netID         // Cornell netID，用來找照片用
+
+選填：
+<em> = email         // 聯絡用email
