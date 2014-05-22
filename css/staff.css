@@ -4,9 +4,12 @@
    list-style-type:none;
 }
 
-#Position{
-   margin:0;
+#Staff{
+   margin:0px auto;
    width:80%;
+}
+
+#Position{
 }
 #ChineseTitle{
 }
