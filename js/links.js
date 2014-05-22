@@ -1,5 +1,5 @@
 function loadLinks() {
-   $.get("pages/staff/data", function(data) {
+   $.get("pages/links/data", function(data) {
       // 預備輸出的html
       var html_stack = "";
       $('l',data).each(function(){
