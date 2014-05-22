@@ -26,7 +26,7 @@ function loadStaff(yeartag) {
       var html_stack = "";
 
       // data內容的定義如staff/README
-alert("asdf2");
+alert(xml_data);
       var p  = xml_data.getElementsByTagName('p');
 alert("123");
       var p_len = p.length;
