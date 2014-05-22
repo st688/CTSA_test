@@ -4,35 +4,84 @@
    list-style-type:none;
 }
 
+/*
+ staff的架構如下：
+ 　外層框架
+ 　　職位框架
+ 　　　職位描述區
+ 　　　　中英文職稱
+ 　　　成員框架
+ 　　　　描述區
+ 　　　　　中英文姓名
+ 　　　　　主修
+ 　　　　　Email
+ 　　　　照片區
+*/
+
+/*
+ 外層框架
+*/
 #Staff{
    margin:0px auto;
    width:80%;
 }
 
+/*
+ 職位框架
+*/
 #Position{
 }
+/*
+ 職位描述區
+*/
+#PositionDescription{
+}
+/*
+ 中英文職稱
+*/
 #ChineseTitle{
 }
 #EnglishTitle{
 }
 
+/*
+ 成員框架
+*/
 #Member{
    width:300px;
    display:inline-block;
 }
+/*
+ 描述區
+*/
 #MemberDescription{
    width:200px;
    float:right;
    word-wrap:break-word;
 }
+/*
+ 中英文姓名
+*/
 #ChineseName{
 }
 #EnglishName{
 }
+/*
+ 主修
+*/
 #Major{
 }
-#EMail{
-}
+/*
+ Email 連結的樣式設定
+*/
+#EMail a:link   {color:blue; text-decoration:none;}
+#EMail a:visited{color:blue; text-decoration:none;}
+#EMail a:hover  {color:red;  text-decoration:none;}
+#EMail a:active {color:red;  text-decoration:none;}
+
+/*
+ 照片區
+*/
 #MemberPhoto{
    width:100px;
    float:left;

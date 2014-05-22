@@ -11,8 +11,10 @@ function loadStaff(yeartag) {
          tc = $(this).find('tc').text();
          te = $(this).find('te').text();
 
-         html_stack = html_stack + "<div id='ChineseTitle'>" + tc + "</div>\n"
-                                 + "<div id='EnglishTitle'>" + te + "</div>\n";
+         html_stack = html_stack + "<div id='PositionDescription'>\n"
+                                 + "<div id='ChineseTitle'>" + tc + "</div>\n"
+                                 + "<div id='EnglishTitle'>" + te + "</div>\n"
+                                 + "</div>\n";
          $('m',$(this)).each(function(){
             // 生成個人資料
             html_stack = html_stack + "<div id='Member'>\n<div id='MemberDescription'>\n";
