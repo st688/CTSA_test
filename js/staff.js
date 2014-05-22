@@ -46,6 +46,7 @@ function loadStaff(yeartag) {
 function initStaff(){
    var latest, decade, year_min, year_max;
    $.get("pages/staff/years", function(data) {
+alert(data);
       latest = $(data).find('latest');
 
       loadStaff("s"+latest);
