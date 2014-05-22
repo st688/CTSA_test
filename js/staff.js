@@ -7,6 +7,7 @@ function loadStaff(yeartag) {
       var p  = data.getElementsByTagName('p');
       var p_len = p.length;
       var tc, te, m, m_len, c, e, a, i, em;
+alert(html_stack+"now p = " + p_len);
       // 生成職位資料
       for( var k = 0; k < p_len; ++k){
          tc = p[k].getElementsByTagName('tc');
@@ -14,7 +15,7 @@ function loadStaff(yeartag) {
          html_stack = html_stack + "<div>" + tc[0] + te[0] + "</div>\n"
          m  = p[k].getElementsByTagName('m');
          m_len = m.length;
-
+alert(html_stack);
          // 生成個人資料
          for( var j = 0; j < m_len; ++j){
             html_stack = html_stack + "<div>";
@@ -26,9 +27,10 @@ function loadStaff(yeartag) {
             html_stack = html_stack + "<img onerror=\"this.src='images/noImg.jpg'\" src=\"images/" + i + ".jpg\" />";
             em = m[j].getElementsByTagName('em');
             html_stack = html_stack + "</div>\n";
+alert(html_stack);
          }
       }
-
+alert(html_stack);
       $('#Staff').html(html_stack);
    });
 }
