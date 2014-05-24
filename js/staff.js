@@ -46,9 +46,9 @@ function loadStaff(yeartag) {
 function initStaff(){
 //   var latest, decade, year_min, year_max;
    $("#Content").bind("e_YearChosen", function(yr){
-      loadStaff("s" + yr + "_" + ((yr+1)%10) );
+      var yr_int = parseInt(yr);
+      loadStaff("s" + yr_int + "_" + ((yr_int+1)%10) );
    });
-alert("asdf");
    initTimeLine("staff");
 /*
    $.get("data/staff/years", function(data) {

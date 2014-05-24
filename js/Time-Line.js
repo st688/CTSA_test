@@ -58,7 +58,5 @@ function initTimeLine(page){
 
 // 發送「年份被選擇」事件
 function triggerYearChosen(yr){
-alert(yr);
-alert(parseInt(yr));
    $("#Content").trigger("e_YearChosen", yr);
 }
