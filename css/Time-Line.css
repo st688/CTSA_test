@@ -58,9 +58,10 @@
  時間軸框架
 */
 #Slider-Container{
-   position:relative;
    height:50px;
    width:730px;
+   position:relative;
+   display:block;
 }
 /*
  時間軸背景
@@ -78,9 +79,8 @@
    height:30px;
    width:30px;
    position:absolute;
-   top:-15px;
+   top:10px;
    background-color:#00FF00;
-   vertical-align:middle;
 }
 /*
  年份項目框架
