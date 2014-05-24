@@ -66,6 +66,7 @@
  年份項目框架
 */
 #Yr-Container{
+   width:100%;
    list-style-type:none;
 }
 /*
