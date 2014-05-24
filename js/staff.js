@@ -45,9 +45,7 @@ function loadStaff(yeartag) {
 
 function initStaff(){
 //   var latest, decade, year_min, year_max;
-alert("a1");
-   initTimeLine('staff');
-
+   initTimeLine("staff");
 /*
    $.get("data/staff/years", function(data) {
       // 取得最新年份
@@ -73,5 +71,5 @@ alert("a1");
    });
 */
 }
-setttt();
+
 addLoadEvent(initStaff());
