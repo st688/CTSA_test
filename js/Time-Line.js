@@ -102,7 +102,7 @@ function fMouseDown(e){
    var offset_sl = $("#Slider").offset();            // Slider 絕對座標
    var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
    clientX_down  = e.clientX;
-   slider_x      = $("#Slider").css('left');
+   slider_x      = $("#Slider").position().css('left');
 alert(slider_x);
    switch( time_line_style ){
       case 0:
