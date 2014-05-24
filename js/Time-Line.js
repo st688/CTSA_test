@@ -26,14 +26,14 @@ function setTimeLine(v){
 
    for(var i = 0; i < 10; ++i){
       html_stack += "<li class='Yr'>";
-      if( (i >= year_min) && (i <= year_max) ){
+      if( (i >= year_min) && (i <= year_x) ){
          html_stack += "<a href=\"#\" onclick=\"return triggerYearChosen(" + (dec + i) + ");\">" // 暫時用，等改拖曳之後刪除
                      + (dec + i) + "</a>";
       }
       html_stack += "</li>\n";
    }
    html_stack += "<li class='Yr'>";
-   if( (time_line_style == 1) && (ma == 9) ){
+   if( (time_line_style == 1) && (year_max == 9) ){
       html_stack += (dec + 10);
    }
    html_stack += "</li>\n</center></ul>";
