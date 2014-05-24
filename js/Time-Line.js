@@ -15,7 +15,7 @@ function setTimeLine(v){
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\"><div id='Slider'></div>"
+                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\" onclick=\"return false\"><div id='Slider'></div>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    
