@@ -35,6 +35,7 @@
    height:80px;
    width:160px;
    display:table-cell;
+   vertical-align:middle;
 }
 
 /*

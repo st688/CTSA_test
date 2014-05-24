@@ -42,6 +42,7 @@
 .Dec{
    width:100px;
    display:table-cell;
+   vertical-align:middle;
 }
 　
 /*
@@ -72,5 +73,6 @@
 */
 .Yr{
    width:8%;
-   display:block;
+   display:table-cell;
+   vertical-align:middle;
 }
