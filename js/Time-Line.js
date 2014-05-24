@@ -41,7 +41,7 @@ function setTimeLine(v){
 
    // 更新長度參數
    width_sl  = $("#Slider").width();
-   width_bg  = $("#Slider-Background").width()
+   width_bg  = $("#Slider-Background").width();
 
    // 不要回到頂端
    return false;
@@ -94,8 +94,8 @@ var clientX_down    = 0; // 滑鼠按下時的x
 var dx_feasible_min = 0; // 最左可以拉到哪裡
 var dx_feasible_max = 0; // 最右可以拉到哪裡
 
-var width_sl = $("#Slider").width();            // Slider 寬度   
-var width_bg = $("#Slider-Background").width(); // Slider Background 寬度
+var width_sl = 0; // Slider 寬度   
+var width_bg = 0; // Slider Background 寬度
 
 // 滑鼠按下
 function fMouseDown(e){
