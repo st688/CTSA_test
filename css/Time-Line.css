@@ -44,6 +44,7 @@
    width:100px;
    display:table-cell;
    color:blue;
+   vertical-align:middle;
 }
 　
 /*
@@ -87,4 +88,5 @@
 .Yr{
    width:70px;
    display:table-cell;
+   vertical-align:middle;
 }

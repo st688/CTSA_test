@@ -6,8 +6,8 @@ var current_year = 2014;
 // 建立年份時間軸
 function setTimeLine(v){
    // 該年代被選擇
-   $(".Dec").css('color','blue');
-   $("#Dec"+ v).css('color','red');
+   $(".Dec a").css('color','blue');
+   $("#Dec" + v + " a").css('color','red');
    var html_stack = "<div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
                   + "<div id='Slider'></div></div>\n"
