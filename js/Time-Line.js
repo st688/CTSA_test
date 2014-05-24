@@ -42,11 +42,11 @@ function setTimeLine(v){
    // 改變 Slider 外型（可能的話再想辦法避免直接把 css 參數打在裡面）
    switch( time_line_style ){
       case 0:
-            $("#Slider").css('width', $(".Yr").width() )
+            $("#Slider").css('width', 30 )
                         .css('left',  15 );
          break;
       case 1:
-            $("#Slider").css('width', 30 )
+            $("#Slider").css('width', $(".Yr").width() )
                         .css('left',   0 );
          break;
    }
@@ -165,7 +165,7 @@ function fMouseUp(e){
    }
    
    var round_num = Math.round((now_left - min_left)/width_yr);
-   alert(round_num);
+
    $("#Slider").css('left', min_left + round_num * width_yr)
    document.onmousemove = null;
    document.onmouseup   = null;
