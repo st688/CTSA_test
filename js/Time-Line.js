@@ -26,9 +26,9 @@ function setTimeLine(v){
 
    for(var i = 0; i < 10; ++i){
       html_stack += "<li class='Yr'>";
-      if( (i >= year_min) && (i <= year_max) ){
-         html_stack += "<a href=\"#\" onclick=\"return triggerYearChosen(" + (dec + i) + ");\">" // 暫時用，等改拖曳之後刪除
-                     + (dec + i) + "</a>";
+      if( ((i >= year_min) && (i <= year_max)) || 
+          ((time_line_style == 1) && (i == year_max + 1)) ){
+         html_stack += (dec + i);
       }
       html_stack += "</li>\n";
    }
