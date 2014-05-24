@@ -68,7 +68,8 @@
 #Slider-Background{
    height:10px;
    width:700px;
-   position:static;
+   position:absolute;
+   top:20px;
    background-color:#CC0033;
    vertical-align:middle;
 }
