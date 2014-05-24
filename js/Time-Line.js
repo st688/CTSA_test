@@ -26,7 +26,7 @@ function setTimeLine(v){
 
    for(var i = 0; i < 10; ++i){
       html_stack += "<li class='Yr'>";
-      if( (i >= year_min) && (i <= year_max) )
+      if( (i >= year_min) && (i <= year_max) ){
          html_stack += (dec + i);
       }
       if( (time_line_style == 1) && (i == (year_max + 1)) ){
