@@ -46,7 +46,7 @@ function loadStaff(yeartag) {
 function initStaff(){
 //   var latest, decade, year_min, year_max;
 alert("a1");
-setttt()
+//setttt();
    initTimeLine('staff');
 
 /*
@@ -74,5 +74,5 @@ setttt()
    });
 */
 }
-
+setttt();
 addLoadEvent(initStaff());
