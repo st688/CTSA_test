@@ -8,8 +8,8 @@ function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
                   + "<div id='Yr-Container'>";
    var s, mi, ma, dec;
-   mi = parseInt($("Dec"+ v).mi);
-   ma = parseInt($("Dec"+ v).ma);
+   mi = parseInt($("Dec"+ v).mi.text());
+   ma = parseInt($("Dec"+ v).ma.text());
    dec = v * 10;
 
 alert("mi:" + mi + "ma" + ma );
