@@ -39,9 +39,6 @@ function setTimeLine(v){
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
-   // 控制滑鼠按下事件
-//   $("#Slider").onmousedown = fMouseDown;
-
    // 不要回到頂端
    return false;
 }
@@ -99,8 +96,8 @@ function fMouseDown(e){
    document.onmouseup   = fMouseUp;
    clientX_down         = e.clientX;
    slider_x             = $("#Slider").attr('left');
-alert("down");
-   switch( time_line_style  ){
+
+   switch( time_line_style ){
       case 0:
          dx_feasible_min = $("#Slider-Background").getBoundingClientRect().left
                          - $("#Slider").getBoundingClientRect().left  * 0.5
