@@ -76,6 +76,6 @@
 */
 .Yr{
    width:10%;
-   display:inline;
+   display:table-cell;
    vertical-align:middle;
 }
