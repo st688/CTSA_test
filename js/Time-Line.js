@@ -40,7 +40,7 @@ function setTimeLine(v){
    $('#Time-Line-Yr').html(html_stack);
 
    // 控制滑鼠按下事件
-   $("#Slider-Container a").onmousedown = fMouseDown;
+   $("#Slider").onmousedown = fMouseDown;
 
    // 不要回到頂端
    return false;
