@@ -8,7 +8,6 @@ function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
                   + "<div id='Yr-Container'>";
    var s, mi, ma, dec;
-alert("#Dec"+ v);
    mi = $("#Dec"+ v).attr("mi");
    ma = $("#Dec"+ v).attr("ma");
 
