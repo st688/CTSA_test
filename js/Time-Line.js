@@ -21,7 +21,7 @@ function setTimeLine(v){
       }
       html_stack += "</div>\n";
    }
-   if( (time_line_stlye == 1) && (ma == 9) ){
+   if( (time_line_style == 1) && (ma == 9) ){
       html_stack += "<div class='Yr'>" + (dec + 10) + "</div>\n";
    }
    html_stack += "</div>";
