@@ -15,11 +15,11 @@ function setTimeLine(v){
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<a href=\"#\" onclick=\"return false;\"><div id='Slider'></div>"
+                  + "<a href=\"#\" onmousedown=\"return fMouseDown(e);\"><div id='Slider'></div>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    // 控制滑鼠按下事件
-   $("#Slider-Container a").onmousedown = fMouseDown;
+//   $("#Slider-Container a").onmousedown = fMouseDown;
    
    year_min = $("#Dec"+ v).attr("mi");
    year_max = $("#Dec"+ v).attr("ma");
