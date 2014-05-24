@@ -50,7 +50,7 @@ function initTimeLine(page){
 
       html_stack += "</ul>\n<ul id='Time-Line-Yr'></ul>";
       $('#Time-Line').html(html_stack);
-      setTimeLine(n % 10);
+      setTimeLine(Math.floor(n / 10));
    });
 }
 
