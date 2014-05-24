@@ -47,7 +47,7 @@ function initStaff(){
    var latest, decade, year_min, year_max;
    $.get("data/staff/years", function(data) {
       // 取得最新年份
-      latest = $data.find('latest').text();
+      latest = $('latest',data).text();
       loadStaff("s"+latest);
 
       // 生成Timeline
