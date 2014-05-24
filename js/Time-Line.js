@@ -110,8 +110,8 @@ function fMouseDown(e){
          dx_feasible_max = offset_bg.left + width_bg - offset_sl.left;
          break;
       case 1:
-         dx_feasible_min = offset_bg.left            - offset_sl.left - width/2;
-         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width/2;
+         dx_feasible_min = offset_bg.left            - offset_sl.left - width_sl/2;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2;
          break;
    }
 
