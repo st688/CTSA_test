@@ -1,5 +1,14 @@
 /*
- 導覽列本體
+ Top-Bar的架構如下：
+ 　導覽列框架
+ 　　導覽列項目框架
+ 　　　選項
+ 　　　　選項按鈕
+ 　導覽列修正
+*/
+
+/*
+ 導覽列框架
 */
 #Top-Bar{
    margin:0;
@@ -12,7 +21,7 @@
 }
 
 /*
- 導覽列列舉的外包裝
+ 導覽列項目框架
 */
 .Menu-Bar{
    margin:0;
@@ -21,7 +30,7 @@
 }
 
 /*
- 列舉導覽內容的按鍵
+ 選項
 */
 .Menu-Bar li{
    height:80px;
@@ -32,7 +41,7 @@
 }
 
 /*
- 讓超連結不要有底線跟變色
+ 讓選項超連結不要有底線跟變色
 */
 .Menu-Bar a:link   {text-decoration:none;}
 .Menu-Bar a:visited{text-decoration:none;}
@@ -40,7 +49,7 @@
 .Menu-Bar a:active {text-decoration:none;}
 
 /*
- 每個按鍵的樣式
+ 選項按鈕
 */
 .Top-Bar-Buttons{
    color:white;
@@ -48,11 +57,9 @@
 }
 
 /*
- 修正導覽列定在上方時的平滑捲動
+ 導覽列修正：定在上方時的平滑捲動
 */
 #Top-Bar-Fix{
    height:80px;
    display:none;
 }
-
-

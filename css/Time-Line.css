@@ -1,24 +1,77 @@
 /*
  Time-Line的架構如下：
  　外層框架
- 　　
- 　　
+ 　　年代框架
+ 　　　年代項目框架
+ 　　　　年代選項
+ 　　年份框架
+ 　　　時間軸框架
+ 　　　　時間軸
+ 　　　年份項目框架
+ 　　　　年份項目
+*/
+
+/*
+ 外層框架
+*/
+#Time-Line{
+   margin:0px auto;
+}
+
+/*
+ 年代框架
 */
 #Time-Line-Dec{
+   margin:0px auto;
 }
-
-#Time-Line-Dec ul li{
+/*
+ 年代項目框架
+*/
+#Dec-Container{
+   margin:0px auto;
+   list-style-type:none;
 }
-
+/*
+ 年代選項
+*/
+.Dec{
+   margin:0px auto;
+   width:100px;
+   display:table-cell;
+   text-align:center;
+   vertical-align:middle;
+}
+　
+/*
+ 年份框架
+*/
 #Time-Line-Yr{
+   margin:0px auto;
 }
-
+/*
+ 時間軸框架
+*/
 #Slider-Container{
 }
+/*
+ 時間軸
+*/
 #Slider{
 }
+/*
+ 年份項目框架
+*/
 #Yr-Container{
+   margin:0px auto;
+   list-style-type:none;
 }
-
+/*
+ 年份項目
+*/
 .Yr{
+   margin:0px auto;
+   width:8%;
+   display:table-cell;
+   text-align:center;
+   vertical-align:middle;
 }
