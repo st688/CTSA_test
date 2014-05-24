@@ -159,8 +159,10 @@ function fMouseUp(e){
    $("#Slider").css('left', slider_left + round_num * width_yr)
    document.onmousemove = null;
    document.onmouseup   = null;
-   
+
+alert(current_year);
    current_year = Math.floor(current_year / 10) + round_num;
+alert(current_year);
    triggerYearChosen(current_year);
    return false;
 }
