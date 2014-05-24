@@ -40,7 +40,6 @@
  年代選項
 */
 .Dec{
-   margin:0px auto;
    width:100px;
    display:table-cell;
    vertical-align:middle;
@@ -74,7 +73,6 @@
  年份項目
 */
 .Yr{
-   margin:0px auto;
    width:8%;
    display:table-cell;
    vertical-align:middle;
