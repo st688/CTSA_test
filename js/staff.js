@@ -48,6 +48,7 @@ function initStaff(){
    $("#Content").bind("e_YearChosen", function(yr){
       loadStaff("s" + yr + "_" + ((yr+1)%10) );
    });
+alert("asdf");
    initTimeLine("staff");
 /*
    $.get("data/staff/years", function(data) {
