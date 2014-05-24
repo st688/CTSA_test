@@ -15,7 +15,7 @@ function setTimeLine(v){
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<a href=\"#\" onclick=\"return false;\"><div id='Slider'></div>"
+                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\"><div id='Slider'></div>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    
@@ -40,7 +40,7 @@ function setTimeLine(v){
    $('#Time-Line-Yr').html(html_stack);
 
    // 控制滑鼠按下事件
-   $("#Slider").onmousedown = fMouseDown;
+//   $("#Slider").onmousedown = fMouseDown;
 
    // 不要回到頂端
    return false;
