@@ -16,8 +16,6 @@
    width:100%;
    background-color:#CC0033;
    text-align:center;
-
-   font-family: Microsoft JhengHei, PMingLiU, Apple LiSung;
 }
 
 /*
@@ -25,7 +23,6 @@
 */
 .Menu-Bar{
    margin:0;
-   padding:0;
    list-style-type:none;
 }
 
