@@ -39,6 +39,18 @@ function setTimeLine(v){
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
+   // 改變 Slider 外型（可能的話再想辦法避免直接把 css 參數打在裡面）
+   switch( time_line_style ){
+      case 0:
+            $("#Slider").css('width', $(".Yr").width() );
+                        .css('left',  15 );
+         break;
+      case 1:
+            $("#Slider").css('width', 30 );
+                        .css('left',   0 );
+         break;
+   }
+
    // 更新長度參數
    width_sl  = $("#Slider").width();
    width_bg  = $("#Slider-Background").width();
@@ -104,19 +116,19 @@ function fMouseDown(e){
    var offset_sl = $("#Slider").offset();            // Slider 絕對座標
    var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
    clientX_down  = e.clientX;
-   slider_x      = $("#Slider").position().left;
+   slider_left   = $("#Slider").position().left;
 
    switch( time_line_style ){
       case 0:
-         dx_feasible_min = offset_bg.left            - offset_sl.left 
-                         + year_min * width_yr;
-         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl 
-                         - (9-year_max) * width_yr;
-         break;
-      case 1:
          dx_feasible_min = offset_bg.left            - offset_sl.left - width_sl/2 
                          + year_min * width_yr;
          dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2
+                         - (9-year_max) * width_yr;
+         break;
+      case 1:
+         dx_feasible_min = offset_bg.left            - offset_sl.left 
+                         + year_min * width_yr;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl 
                          - (9-year_max) * width_yr;
          break;
    }
@@ -135,14 +147,20 @@ function fMouseMove(e){
    if( dx > dx_feasible_max ){
       dx = dx_feasible_max;
    }
-   $("#Slider").css('left', slider_x + dx);
+   $("#Slider").css('left', slider_left + dx);
    return false;
 }
 
 // 滑鼠放開
 function fMouseUp(e){
+   var now_left   = $("#Slider").position().left;
+   var round_num  = Math.round((now_left - slider_left)/width_yr);
+   
+   $("#Slider").css('left', slider_left + round_num * width_yr)
    document.onmousemove = null;
    document.onmouseup   = null;
+   
+   current_year = Math.floor(current_year / 10) + round_num;
    triggerYearChosen(current_year);
    return false;
 }
