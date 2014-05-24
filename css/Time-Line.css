@@ -71,6 +71,7 @@
    position:absolute;
    top:20px;
    background-color:#CC0033;
+   z-index:-2;
 }
 /*
  時間軸選條
@@ -82,6 +83,7 @@
    top:10px;
    left:0;
    background-color:#00FF00;
+   z-index:-1;
 }
 /*
  年份項目框架
