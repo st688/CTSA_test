@@ -42,6 +42,7 @@ function setTimeLine(v){
    // 更新長度參數
    width_sl  = $("#Slider").width();
    width_bg  = $("#Slider-Background").width();
+   width_yr  = $(".Yr").width();
 
    // 不要回到頂端
    return false;
@@ -96,6 +97,7 @@ var dx_feasible_max = 0; // 最右可以拉到哪裡
 
 var width_sl = 0; // Slider 寬度   
 var width_bg = 0; // Slider Background 寬度
+var width_yr = 0; // Yr 寬度
 
 // 滑鼠按下
 function fMouseDown(e){
@@ -103,22 +105,24 @@ function fMouseDown(e){
    var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
    clientX_down  = e.clientX;
    slider_x      = $("#Slider").position().left;
-alert(slider_x);
+
    switch( time_line_style ){
       case 0:
-         dx_feasible_min = offset_bg.left            - offset_sl.left;
-         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left;
+         dx_feasible_min = offset_bg.left            - offset_sl.left 
+                         + year_min * width_yr;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl 
+                         - (9-year_max) * width_yr;
          break;
       case 1:
-         dx_feasible_min = offset_bg.left            - offset_sl.left - width_sl/2;
-         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2;
+         dx_feasible_min = offset_bg.left            - offset_sl.left - width_sl/2 
+                         + year_min * width_yr;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2
+                         - (9-year_max) * width_yr;
          break;
    }
-alert("ss1");
 
    document.onmousemove = fMouseMove;
    document.onmouseup   = fMouseUp;
-alert("ss2");
    return false;
 }
 
