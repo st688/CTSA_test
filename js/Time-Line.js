@@ -5,7 +5,9 @@ var current_year = 2014;
 
 // 建立年份時間軸
 function setTimeLine(v){
-   var html_stack = "<div id='Slider-Container'><center><div id='Slider'></div></center></div>\n"
+   var html_stack = "<div id='Slider-Container'>"
+                  + "<center><div id='Slider-Background'></div></center>"
+                  + "<div id='Slider'></div></div>\n"
                   + "<ul id='Yr-Container'><center>";
    var mi, ma, dec;
    mi = $("#Dec"+ v).attr("mi");

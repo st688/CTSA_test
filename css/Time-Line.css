@@ -6,6 +6,7 @@
  　　　　年代選項
  　　年份框架
  　　　時間軸框架
+ 　　　　時間軸背景
  　　　　時間軸
  　　　年份項目框架
  　　　　年份項目
@@ -56,8 +57,14 @@
  時間軸框架
 */
 #Slider-Container{
+}
+/*
+ 時間軸背景
+*/
+#Slider-Background{
    height:10px;
    width:700px;
+   background-color:#CC0033;
 }
 /*
  時間軸
