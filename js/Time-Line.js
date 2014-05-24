@@ -18,7 +18,7 @@ function setTimeLine(v){
    for(var i = 0; i < 10; ++i){
       html_stack += "<li class='Yr'>";
       if( (i >= mi) && (i <= ma) ){
-         html_stack += "<a href=\"\" onclick=\"return triggerYearChosen(" + (dec + i) + ");\">" // 暫時用，等改拖曳之後刪除
+         html_stack += "<a onclick=\"return triggerYearChosen(" + (dec + i) + ");\">" // 暫時用，等改拖曳之後刪除
                      + (dec + i) + "</a>";
       }
       html_stack += "</li>\n";
@@ -49,7 +49,7 @@ function initTimeLine(page){
 
          // 點擊之後建立年份時間軸
          html_stack += "<li id='Dec"+ v + "' mi=" + mi + " ma=" + ma + " class='Dec'>" 
-                     + "<a href=\"\" onclick=\"return setTimeLine(" + v + ");\" >"
+                     + "<a href=\"javascript:setTimeLine(" + v + ");\" >"
                      + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
       });
 
