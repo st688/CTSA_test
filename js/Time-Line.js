@@ -93,7 +93,7 @@ var dx_feasible_max = 0; // 最右可以拉到哪裡
 // 滑鼠按下
 function fMouseDown(e){
    clientX_down         = e.clientX;
-   slider_x             = $("#Slider").getBoundingClientRect().left;
+   slider_x             = document.getElementsByTagName("#Slider").attr('left');
 
 alert( clientX_down + " " + slider_x);
    switch( time_line_style ){
