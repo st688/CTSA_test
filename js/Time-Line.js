@@ -3,6 +3,11 @@ var s = 0;
 // 當前年份
 var n = 2014;
 
+
+function setttt(){
+alert(":)");
+}
+
 // 建立雙時間軸：年代、年份
 function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
