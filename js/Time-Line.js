@@ -153,10 +153,20 @@ function fMouseMove(e){
 
 // 滑鼠放開
 function fMouseUp(e){
-   var now_left   = $("#Slider").position().left;
-   var round_num  = Math.round((now_left - slider_left)/width_yr);
+   var now_left  = $("#Slider").position().left;
+   var min_left  = 0;
+   switch( time_line_style ){
+      case 0:
+         min_left = 0;
+         break;
+      case 1:
+         min_left = width_sl/2;
+         break;
+   }
    
-   $("#Slider").css('left', slider_left + round_num * width_yr)
+   var round_num = Math.round((now_left - min_left)/width_yr);
+   
+   $("#Slider").css('left', min_left + round_num * width_yr)
    document.onmousemove = null;
    document.onmouseup   = null;
 
