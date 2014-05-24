@@ -99,8 +99,6 @@ function fMouseDown(e){
    clientX_down  = e.clientX;
    slider_x      = offset.left;
 
-
-alert( clientX_down + " " + slider_x);
    switch( time_line_style ){
       case 0:
          dx_feasible_min = offset_bg.left            - offset.left - width/2;
@@ -112,7 +110,6 @@ alert( clientX_down + " " + slider_x);
          break;
    }
 
-alert(dx_feasible_min + " " + dx_feasible_max);
    document.onmousemove = fMouseMove;
    document.onmouseup   = fMouseUp;
    return false;
