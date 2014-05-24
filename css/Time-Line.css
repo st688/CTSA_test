@@ -16,6 +16,8 @@
 */
 #Time-Line{
    margin:0;
+   padding:0;
+   width:100%;
    text-align:center;
 }
 
@@ -23,7 +25,8 @@
  年代框架
 */
 #Time-Line-Dec{
-   margin:0px auto;
+   margin:0;
+   padding:0;
 }
 /*
  年代項目框架
