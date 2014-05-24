@@ -16,6 +16,7 @@
 */
 #Time-Line{
    margin:0px auto;
+   text-align:center;
 }
 
 /*
@@ -38,7 +39,6 @@
    margin:0px auto;
    width:100px;
    display:table-cell;
-   text-align:center;
    vertical-align:middle;
 }
 　
@@ -72,6 +72,5 @@
    margin:0px auto;
    width:8%;
    display:table-cell;
-   text-align:center;
    vertical-align:middle;
 }
