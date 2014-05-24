@@ -92,24 +92,23 @@ var dx_feasible_max = 0; // 最右可以拉到哪裡
 
 // 滑鼠按下
 function fMouseDown(e){
-   clientX_down         = e.clientX;
-   slider_x             = $("#Slider").getBoundingClientRect().left;
+   var width     = $("#Slider").width();
+   var width_bg  = $("#Slider-Background").width()
+   var offset    = $("#Slider").offset();
+   var offset_bg = $("#Slider-Background").offset();
+   clientX_down  = e.clientX;
+   slider_x      = offset.left;
+
 
 alert( clientX_down + " " + slider_x);
    switch( time_line_style ){
       case 0:
-         dx_feasible_min = $("#Slider-Background").getBoundingClientRect().left
-                         - $("#Slider").getBoundingClientRect().left  * 0.5
-                         - $("#Slider").getBoundingClientRect().right * 0.5;
-         dx_feasible_max = $("#Slider-Background").getBoundingClientRect().left
-                         - $("#Slider").getBoundingClientRect().left  * 0.5
-                         - $("#Slider").getBoundingClientRect().right * 0.5;
+         dx_feasible_min = offset_bg.left            - offset.left - width/2;
+         dx_feasible_max = offset_bg.left + width_bg - offset.left - width/2;
          break;
       case 1:
-         dx_feasible_min = $("#Slider-Background").getBoundingClientRect().left
-                         - $("#Slider").getBoundingClientRect().left;
-         dx_feasible_max = $("#Slider-Background").getBoundingClientRect().right
-                         - $("#Slider").getBoundingClientRect().right;
+         dx_feasible_min = offset_bg.left            - offset.left;
+         dx_feasible_max = offset_bg.left + width_bg - offset.left;
          break;
    }
 
