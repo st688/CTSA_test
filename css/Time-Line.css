@@ -74,11 +74,10 @@
  時間軸選條
 */
 #Slider{
-   left:0;
-   top:0;
+   top:-15;
    height:30px;
    width:30px;
-   position:absolute;
+   position:relative;
    background-color:#00FF00;
    vertical-align:middle;
 }
