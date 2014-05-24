@@ -9,8 +9,8 @@ function setTimeLine(v){
                   + "<div id='Yr-Container'>";
    var s, mi, ma, dec;
 
-   mi = $("#Dec"+ v).mi;
-   ma = $("#Dec"+ v).ma;
+   mi = $("#Dec"+ v).getAttribute("mi") ;
+   ma = $("#Dec"+ v).getAttribute("ma") ;
 
 alert(mi);
 alert(mi.text());
