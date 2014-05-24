@@ -95,6 +95,7 @@ function fMouseDown(e){
    clientX_down         = e.clientX;
    slider_x             = $("#Slider").attr('left');
 
+alert( clientX_down + " " + slider_x);
    switch( time_line_style ){
       case 0:
          dx_feasible_min = $("#Slider-Background").getBoundingClientRect().left
