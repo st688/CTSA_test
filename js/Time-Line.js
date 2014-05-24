@@ -1,5 +1,5 @@
 // 時間軸樣式
-var style = 0;
+var time_line_style = 0;
 // 當前年份
 var current_year = 2014;
 
@@ -7,7 +7,7 @@ var current_year = 2014;
 function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
                   + "<div id='Yr-Container'>";
-   var s, mi, ma, dec;
+   var mi, ma, dec;
    mi = $("#Dec"+ v).attr("mi");
    ma = $("#Dec"+ v).attr("ma");
 
@@ -21,7 +21,7 @@ function setTimeLine(v){
       }
       html_stack += "</div>\n";
    }
-   if( (stlye == 1) && (ma == 9) ){
+   if( (time_line_stlye == 1) && (ma == 9) ){
       html_stack += "<div class='Yr'>" + (dec + 10) + "</div>\n";
    }
    html_stack += "</div>";
@@ -35,8 +35,8 @@ function initTimeLine(page){
    $.get('data/'+page+'/time_line', function(data) {
       // 預備輸出的html
       var html_stack = "";
-      current_year = parseInt($('n',data).text()); // 取得當前年份
-      style        = parseInt($('s',data).text()); // 取得樣式
+      current_year    = parseInt($('n',data).text()); // 取得當前年份
+      time_line_style = parseInt($('s',data).text()); // 取得樣式
 
       // 建立年代時間軸
       html_stack += "<div id='Time-Line-Dec'><ul>\n"
