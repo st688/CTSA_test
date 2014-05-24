@@ -1,7 +1,21 @@
 檔案內容解析
 
-years檔案：
 <d>  = data          // 檔案起始
+
+time_line
+<n>                  // 當前年份
+<s>                  // style, 0代表最細的timeline在點上，1代表timeline跨過
+<dec>                // decade 十年周期，如2010~2019
+<v>                  // 該 decade 的十位以上，如2010~2019 => 201
+<i>                  // min, 該十年周期的起始年個位數
+<a>                  // max, 該十年周期的結束年個位數
+
+links/
+data:
+<l>  = link          // 連結
+
+staff/
+years:
 <latest>             // 目前的幹部年份，(起始西元年)_(結束西元年個位)
 <decade>             // 十年份資料
 <v>  = value         // 西元年 mod 10 的值
