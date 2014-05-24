@@ -44,35 +44,11 @@ function loadStaff(yeartag) {
 }
 
 function initStaff(){
-//   var latest, decade, year_min, year_max;
+   // 如果收到「年份被選擇」事件，讀取該年度名單
    $("#Content").bind("e_YearChosen", function(e,yr){
       loadStaff("s" + yr + "_" + ((yr+1)%10) );
    });
    initTimeLine("staff");
-/*
-   $.get("data/staff/years", function(data) {
-      // 取得最新年份
-      latest = $('latest',data).text();
-      loadStaff("s"+latest);
-
-      // 生成Timeline
-      var html_stack = "";
-      var init;
-      $('decade',data).each(function(){
-         decade   = parseInt($(this).find('v').text());
-         year_min = parseInt($(this).find('min').text());
-         year_max = parseInt($(this).find('max').text());
-         
-
-         for(var i = year_min; i < year_max + 1; ++i){
-            init = decade * 10 + i;
-            html_stack += "<div><a href=\"#\" onclick=\"return loadStaff('s"
-                        + init + "_" + (i+1) + "');\">" + init + "-" + (init + 1) + "</a></div>\n";
-         }
-      });
-      $('#Time-Line').html(html_stack);
-   });
-*/
 }
 
 addLoadEvent(initStaff());

@@ -38,7 +38,7 @@ function initTimeLine(page){
       n = parseInt($('n',data).text()); // 取得當前年份
       s = parseInt($('s',data).text()); // 取得樣式
 
-      html_stack += "<ul id='Time-Line-Dec'>\n"
+      html_stack += "<div id='Time-Line-Dec'><ul>\n"
       $('dec',data).each(function(){
          v  = parseInt($(this).find('v').text()); 
          mi = parseInt($(this).find('i').text()); // min
@@ -49,7 +49,7 @@ function initTimeLine(page){
                      + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
       });
 
-      html_stack += "</ul>\n<ul id='Time-Line-Yr'></ul>";
+      html_stack += "</ul></div>\n<div id='Time-Line-Yr'></div>";
       $('#Time-Line').html(html_stack);
       setTimeLine(Math.floor(n / 10));
    });
