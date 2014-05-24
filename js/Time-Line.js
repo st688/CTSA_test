@@ -103,7 +103,7 @@ function fMouseDown(e){
    var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
    clientX_down  = e.clientX;
    slider_x      = $("#Slider").css('left');
-
+alert(slider_x);
    switch( time_line_style ){
       case 0:
          dx_feasible_min = offset_bg.left            - offset_sl.left;
@@ -114,9 +114,11 @@ function fMouseDown(e){
          dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2;
          break;
    }
+alert("ss1");
 
    document.onmousemove = fMouseMove;
    document.onmouseup   = fMouseUp;
+alert("ss2");
    return false;
 }
 
