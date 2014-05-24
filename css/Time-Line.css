@@ -43,7 +43,7 @@
 .Dec{
    width:100px;
    display:table-cell;
-   vertical-align:middle;
+   color:blue;
 }
 　
 /*
@@ -87,5 +87,4 @@
 .Yr{
    width:70px;
    display:table-cell;
-   vertical-align:middle;
 }
