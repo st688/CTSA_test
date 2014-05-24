@@ -74,6 +74,8 @@
  年份項目
 */
 .Yr{
+   margin-left: auto;
+   margin-right: auto 
    width:8%;
    display:table-cell;
    vertical-align:middle;
