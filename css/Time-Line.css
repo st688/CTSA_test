@@ -61,7 +61,6 @@
    height:50px;
    width:730px;
    position:relative;
-   display:block;
 }
 /*
  時間軸背景
@@ -69,6 +68,7 @@
 #Slider-Background{
    height:10px;
    width:700px;
+   position:static;
    background-color:#CC0033;
    vertical-align:middle;
 }
