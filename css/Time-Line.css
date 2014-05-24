@@ -76,8 +76,8 @@
 #Slider{   
    height:30px;
    width:30px;
-   position:relative;
-   top:-100;
+   position:absolute;
+   top:-15px;
    background-color:#00FF00;
    vertical-align:middle;
 }
