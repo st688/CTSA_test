@@ -39,6 +39,10 @@ function setTimeLine(v){
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
+   // 更新長度參數
+   width_sl  = $("#Slider").width();
+   width_bg  = $("#Slider-Background").width()
+
    // 不要回到頂端
    return false;
 }
@@ -85,19 +89,20 @@ function triggerYearChosen(yr){
 }
 
 // 拖曳處理：
-var slider_x        = 0; // 拖曳起始的x
+var slider_left     = 0; // 拖曳起始的x
 var clientX_down    = 0; // 滑鼠按下時的x
 var dx_feasible_min = 0; // 最左可以拉到哪裡
 var dx_feasible_max = 0; // 最右可以拉到哪裡
 
+var width_sl = $("#Slider").width();            // Slider 寬度   
+var width_bg = $("#Slider-Background").width(); // Slider Background 寬度
+
 // 滑鼠按下
 function fMouseDown(e){
-   var width     = $("#Slider").width();
-   var width_bg  = $("#Slider-Background").width()
-   var offset    = $("#Slider").offset();
-   var offset_bg = $("#Slider-Background").offset();
+   var offset_sl = $("#Slider").offset();            // Slider 絕對座標
+   var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
    clientX_down  = e.clientX;
-   slider_x      = offset.left;
+   slider_x      = $("#Slider").style.left;
 
    switch( time_line_style ){
       case 0:
