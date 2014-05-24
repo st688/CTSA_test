@@ -74,4 +74,4 @@ alert("a2");
 */
 }
 
-addLoadEvent(initStaff());
+addLoadEvent(initTimeLine("staff"););
