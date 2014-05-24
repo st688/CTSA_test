@@ -18,8 +18,6 @@ function setTimeLine(v){
                   + "<a href=\"#\" onclick=\"return false;\"><div id='Slider'></div>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
-   // 控制滑鼠按下事件
-   $("#Slider-Container a").onmousedown = fMouseDown;
    
    year_min = $("#Dec"+ v).attr("mi");
    year_max = $("#Dec"+ v).attr("ma");
@@ -40,6 +38,9 @@ function setTimeLine(v){
    }
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
+
+   // 控制滑鼠按下事件
+   $("#Slider-Container a").onmousedown = fMouseDown;
 
    // 不要回到頂端
    return false;
