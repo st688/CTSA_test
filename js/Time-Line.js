@@ -54,6 +54,7 @@ function initTimeLine(page){
       $('#Time-Line').html(html_stack);
       setTimeLine(Math.floor(n / 10));
    });
+   triggerYearChosen(n);
 }
 
 // 發送「年份被選擇」事件

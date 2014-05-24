@@ -45,11 +45,10 @@ function loadStaff(yeartag) {
 
 function initStaff(){
 //   var latest, decade, year_min, year_max;
-   initTimeLine("staff");
    $("#Content").bind("e_YearChosen", function(yr){
       loadStaff("s" + yr + "_" + ((yr+1)%10) );
    });
-
+   initTimeLine("staff");
 /*
    $.get("data/staff/years", function(data) {
       // 取得最新年份
