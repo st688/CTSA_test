@@ -106,12 +106,12 @@ function fMouseDown(e){
 
    switch( time_line_style ){
       case 0:
-         dx_feasible_min = offset_bg.left            - offset.left - width/2;
-         dx_feasible_max = offset_bg.left + width_bg - offset.left - width/2;
+         dx_feasible_min = offset_bg.left            - offset_sl.left;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left;
          break;
       case 1:
-         dx_feasible_min = offset_bg.left            - offset.left;
-         dx_feasible_max = offset_bg.left + width_bg - offset.left;
+         dx_feasible_min = offset_bg.left            - offset_sl.left - width/2;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width/2;
          break;
    }
 
