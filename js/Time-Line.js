@@ -2,7 +2,7 @@
 var s = 0;
 // 當前年份
 var n = 2014;
-
+$("#example-section26 div").trigger("HighlightEvent", ["orange", "橘色背景"]);
 // 建立雙時間軸：年代、年份
 function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
@@ -11,20 +11,19 @@ function setTimeLine(v){
 alert("#Dec"+ v);
    mi = $("#Dec"+ v).attr("mi");
    ma = $("#Dec"+ v).attr("ma");
-alert(mi);
-alert(parseInt(mi));
 
    dec = v * 10;
 
    for(var i = 0; i < 10; ++i){
       html_stack += "<div class='Yr'>";
       if( (i >= mi) && (i <= ma) ){
-         html_stack += " " + (dec + i) + " ";
+         html_stack += "<a href=\"#\" onclick=\"return triggerYearChosen(" + (dec + i) + ");\">" // 暫時用，等改拖曳之後刪除
+                     + (dec + i) + "</a>";
       }
       html_stack += "</div>\n";
    }
    if( (s == 1) && (ma == 9) ){
-      html_stack += "<div class='Yr'> " + (dec + 10) + " </div>\n";
+      html_stack += "<div class='Yr'>" + (dec + 10) + "</div>\n";
    }
    html_stack += "</div>";
    $('#Time-Line-Yr').html(html_stack);
@@ -57,3 +56,7 @@ function initTimeLine(page){
    });
 }
 
+// 發送「年份被選擇」事件
+function triggerYearChosen(yr){
+   $("#Content").trigger("e_YearChosen", yr);
+}
