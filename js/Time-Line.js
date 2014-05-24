@@ -15,7 +15,7 @@ function setTimeLine(v){
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\"><div id='Slider'></div>"
+                  + "<a href=\"#\" onclick=\"return false;\"><div id='Slider'></div>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    
@@ -39,6 +39,7 @@ function setTimeLine(v){
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
+   $('#Slider').onmousedown = fMouseDown;
    // 改變 Slider 外型（可能的話再想辦法避免直接把 css 參數打在裡面）
    switch( time_line_style ){
       case 0:
