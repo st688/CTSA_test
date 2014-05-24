@@ -51,7 +51,7 @@ alert("ss3");
 
          html_stack += "<li id='Dec"+ v + "' mi=" + mi + " ma=" + ma + ">" 
                      + "<a href=\"#\" onclick=\"return setTimeLine(" + v + ");\" >"
-                     + (v*10) + "-" + ((v+1)*10) "</a></li>\n";
+                     + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
       });
 alert("ss5");
       html_stack += "</ul>\n<ul id='Time-Line-Yr'></ul>";
