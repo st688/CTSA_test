@@ -25,16 +25,11 @@
  年代框架
 */
 #Time-Line-Dec{
-   margin:0;
-   padding:0;
 }
 /*
  年代項目框架
 */
 #Dec-Container{
-   margin:0;
-   padding:0;
-   width:100%;
    list-style-type:none;
 }
 /*
@@ -50,7 +45,6 @@
  年份框架
 */
 #Time-Line-Yr{
-   margin:0px auto;
 }
 /*
  時間軸框架
@@ -66,9 +60,6 @@
  年份項目框架
 */
 #Yr-Container{
-   margin:0;
-   padding:0;
-   width:100%;
    list-style-type:none;
 }
 /*
