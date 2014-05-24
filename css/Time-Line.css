@@ -72,7 +72,7 @@
  年份項目
 */
 .Yr{
-   width:9%;
-   display:table-cell;
+   width:10%;
+   display:inline;
    vertical-align:middle;
 }
