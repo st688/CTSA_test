@@ -1,5 +1,7 @@
 // 時間軸樣式
 var s = 0;
+// 當前年份
+var n = 2014;
 
 // 建立雙時間軸：年代、年份
 function setTimeLine(v){
@@ -26,14 +28,16 @@ function setTimeLine(v){
 
 // 生成時間軸
 function initTimeLine(page){
-   var n, v;
+alert("ss1");
+   var v;
    // 給定參數page，從data/page下面找time_line檔案
    $.get('data/'+page+'/time_line', function(data) {
+alert("ss2");
       // 預備輸出的html
       var html_stack = "";
       n = parseInt($('n',data).text()); // 取得當前年份
       s = parseInt($('s',data).text()); // 取得樣式
-
+alert("ss3");
       html_stack += "<ul id='Time-Line-Dec'>\n"
       $('dec',data).each(function(){
          v  = parseInt($(this).find('v').text()); 
@@ -44,6 +48,7 @@ function initTimeLine(page){
                      + "<a href=\"#\" onclick=\"return setTimeLine(" + v + ");\" >"
                      + (v*10) + "-" + ((v+1)*10) "</a></li>\n";
       });
+alert("ss5");
       html_stack += "</ul>\n<ul id='Time-Line-Yr'></ul>";
       $('#Time-Line').html(html_stack);
       setTimeLine(n % 10);
