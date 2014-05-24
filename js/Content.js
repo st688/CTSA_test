@@ -2,10 +2,8 @@
 function loadContent(page) {
    $.get("pages/" + page + ".html", function(data) {
       $('#Content').html(data);
-      // 回到頂部
-      $("html, body").scrollTop(0);
    });
-   return false;
+   // 相當於return true, 回到頂部
 }
 
 // 增加初次載入頁面要做的工作

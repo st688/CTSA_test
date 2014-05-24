@@ -41,6 +41,8 @@ function loadStaff(yeartag) {
       });
       $('#Staff').html(html_stack);
    });
+   // 不要回到頂端
+   return false;
 }
 
 function initStaff(){
