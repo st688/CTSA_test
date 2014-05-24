@@ -1,9 +1,9 @@
 // 時間軸樣式
-var s = 0;
+var style = 0;
 // 當前年份
-var n = 2014;
-$("#example-section26 div").trigger("HighlightEvent", ["orange", "橘色背景"]);
-// 建立雙時間軸：年代、年份
+var current_year = 2014;
+
+// 建立年份時間軸
 function setTimeLine(v){
    var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
                   + "<div id='Yr-Container'>";
@@ -21,7 +21,7 @@ function setTimeLine(v){
       }
       html_stack += "</div>\n";
    }
-   if( (s == 1) && (ma == 9) ){
+   if( (stlye == 1) && (ma == 9) ){
       html_stack += "<div class='Yr'>" + (dec + 10) + "</div>\n";
    }
    html_stack += "</div>";
@@ -35,15 +35,17 @@ function initTimeLine(page){
    $.get('data/'+page+'/time_line', function(data) {
       // 預備輸出的html
       var html_stack = "";
-      n = parseInt($('n',data).text()); // 取得當前年份
-      s = parseInt($('s',data).text()); // 取得樣式
+      current_year = parseInt($('n',data).text()); // 取得當前年份
+      style        = parseInt($('s',data).text()); // 取得樣式
 
+      // 建立年代時間軸
       html_stack += "<div id='Time-Line-Dec'><ul>\n"
       $('dec',data).each(function(){
          v  = parseInt($(this).find('v').text()); 
          mi = parseInt($(this).find('i').text()); // min
          ma = parseInt($(this).find('a').text()); // max
 
+         // 點擊之後建立年份時間軸
          html_stack += "<li id='Dec"+ v + "' mi=" + mi + " ma=" + ma + ">" 
                      + "<a href=\"#\" onclick=\"return setTimeLine(" + v + ");\" >"
                      + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
@@ -51,9 +53,13 @@ function initTimeLine(page){
 
       html_stack += "</ul></div>\n<div id='Time-Line-Yr'></div>";
       $('#Time-Line').html(html_stack);
-      setTimeLine(Math.floor(n / 10));
+
+      // 初始化年份時間軸
+      setTimeLine(Math.floor(current_year / 10));
    });
-   triggerYearChosen(n);
+
+   // 發送「當前年份被選擇」事件
+   triggerYearChosen(current_year);
 }
 
 // 發送「年份被選擇」事件

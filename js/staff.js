@@ -27,7 +27,7 @@ function loadStaff(yeartag) {
             i = $(this).find('i').text();
             em = $(this).find('em').text();
             html_stack += "<div id='EMail'>";
-            if(em == ""){
+            if((em == "") && (i != "") ){
                html_stack += "<a href=\"mailto:"+i+"@cornell.edu\">"+i+"@cornell.edu</a>";
             } else {
                html_stack += "<a href=\"mailto:"+em+"\">"+em+"</a>";
