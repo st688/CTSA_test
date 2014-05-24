@@ -67,11 +67,16 @@
    height:10px;
    width:700px;
    background-color:#CC0033;
+   vertical-align:middle;
 }
 /*
  時間軸
 */
 #Slider{
+   height:30px;
+   position:absolute;
+   background-color:#00FF00;
+   vertical-align:middle;
 }
 /*
  年份項目框架
