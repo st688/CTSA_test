@@ -68,14 +68,13 @@
 #Yr-Container{
    margin:0;
    padding:0;
-   width:100%;
    list-style-type:none;
 }
 /*
  年份項目
 */
 .Yr{
-   width:10%;
+   width:80px;
    display:table-cell;
    vertical-align:middle;
 }
