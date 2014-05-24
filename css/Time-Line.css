@@ -15,7 +15,7 @@
  外層框架
 */
 #Time-Line{
-   margin:0;
+   margin:0px auto;
    padding:0;
    width:100%;
    text-align:center;
@@ -49,8 +49,9 @@
  年份框架
 */
 #Time-Line-Yr{
-   margin:0;
+   margin:0px auto;
    padding:0;
+
 }
 /*
  時間軸框架
@@ -66,16 +67,13 @@
  年份項目框架
 */
 #Yr-Container{
-   margin:0;
-   padding:0;
+   width:100%;
    list-style-type:none;
 }
 /*
  年份項目
 */
 .Yr{
-   margin-left: auto;
-   margin-right: auto 
    width:8%;
    display:table-cell;
    vertical-align:middle;
