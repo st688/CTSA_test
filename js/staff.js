@@ -46,7 +46,6 @@ function loadStaff(yeartag) {
 function initStaff(){
 //   var latest, decade, year_min, year_max;
 alert("a1");
-//setttt();
    initTimeLine('staff');
 
 /*

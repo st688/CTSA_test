@@ -25,3 +25,7 @@ function addLoadEvent(func) {
       }
    }
 }
+
+function setttt(){
+alert(":)");
+}
