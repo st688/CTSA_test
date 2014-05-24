@@ -92,8 +92,6 @@ var dx_feasible_max = 0; // 最右可以拉到哪裡
 
 // 滑鼠按下
 function fMouseDown(e){
-   document.onmousemove = fMouseMove;
-   document.onmouseup   = fMouseUp;
    clientX_down         = e.clientX;
    slider_x             = $("#Slider").attr('left');
 
@@ -113,6 +111,10 @@ function fMouseDown(e){
                          - $("#Slider").getBoundingClientRect().right;
          break;
    }
+
+alert(dx_feasible_min + " " + dx_feasible_max);
+   document.onmousemove = fMouseMove;
+   document.onmouseup   = fMouseUp;
    return false;
 }
 
