@@ -47,6 +47,7 @@ function initStaff(){
 //   var latest, decade, year_min, year_max;
 alert("a1");
    initTimeLine("staff");
+alert("a2");
 /*
    $.get("data/staff/years", function(data) {
       // 取得最新年份
