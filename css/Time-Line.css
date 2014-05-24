@@ -58,6 +58,7 @@
  時間軸框架
 */
 #Slider-Container{
+   position:relative;
    height:50px;
    width:730px;
 }
