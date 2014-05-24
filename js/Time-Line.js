@@ -160,9 +160,7 @@ function fMouseUp(e){
    document.onmousemove = null;
    document.onmouseup   = null;
 
-alert(current_year);
-   current_year = Math.floor(current_year / 10) + round_num;
-alert(current_year);
+   current_year = Math.floor(current_year / 10)*10 + round_num;
    triggerYearChosen(current_year);
    return false;
 }
