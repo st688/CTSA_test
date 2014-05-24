@@ -35,8 +35,7 @@
    height:80px;
    width:160px;
    display:table-cell;
-   float:left;
-   /* vertical-align:middle; */
+   vertical-align:middle;
 }
 
 /*
