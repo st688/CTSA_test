@@ -1,19 +1,4 @@
 /*
- 標題Logo樣式 
-*/
-#TopLogo{
-   margin:10px;
-   height:140px;
-   width:100%;
-   background-color:white;
-   text-align:center;
-}
-
-#TopLogo img{
-   height:90%;
-}
-
-/*
  導覽列本體
 */
 #Top-Bar{

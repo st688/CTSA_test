@@ -45,6 +45,8 @@ function loadStaff(yeartag) {
 
 function initStaff(){
    var latest, decade, year_min, year_max;
+   initTimeLine("staff");
+/*
    $.get("data/staff/years", function(data) {
       // 取得最新年份
       latest = $('latest',data).text();
@@ -67,6 +69,7 @@ function initStaff(){
       });
       $('#Time-Line').html(html_stack);
    });
+*/
 }
 
 addLoadEvent(initStaff());

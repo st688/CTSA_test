@@ -4,7 +4,7 @@
 
 time_line
 <n>                  // 當前年份
-<s>                  // style, 0代表最細的timeline在點上，1代表timeline跨過
+<s>                  // style, 0代表最細的timeline在年份點上（如2014），1代表timeline跨過年份（如2014~2015）
 <dec>                // decade 十年周期，如2010~2019
 <v>                  // 該 decade 的十位以上，如2010~2019 => 201
 <i>                  // min, 該十年周期的起始年個位數
