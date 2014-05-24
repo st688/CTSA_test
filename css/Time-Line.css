@@ -7,7 +7,7 @@
  　　年份框架
  　　　時間軸框架
  　　　　時間軸背景
- 　　　　時間軸
+ 　　　　時間軸選條
  　　　年份項目框架
  　　　　年份項目
 */
@@ -71,9 +71,11 @@
    vertical-align:middle;
 }
 /*
- 時間軸
+ 時間軸選條
 */
 #Slider{
+   left:0;
+   top:0;
    height:30px;
    width:30px;
    position:absolute;
