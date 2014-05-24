@@ -1,5 +1,5 @@
 function loadStaff(yeartag) {
-   $.get("pages/staff/" + yeartag, function(data) {
+   $.get("data/staff/" + yeartag, function(data) {
       // 預備輸出的html
       var html_stack = "";
       // data內容的定義如staff/README
@@ -45,7 +45,7 @@ function loadStaff(yeartag) {
 
 function initStaff(){
    var latest, decade, year_min, year_max;
-   $.get("pages/staff/years", function(data) {
+   $.get("data/staff/years", function(data) {
       // 取得最新年份
       latest = $('latest',data).text();
       loadStaff("s"+latest);
@@ -61,11 +61,11 @@ function initStaff(){
 
          for(var i = year_min; i < year_max + 1; ++i){
             init = decade * 10 + i;
-            html_stack += "<li><a href=\"#\" onclick=\"return loadStaff('s"
-                        + init + "_" + (i+1) + "');\">" + init + "-" + (init + 1) + "</a></li>\n";
+            html_stack += "<div><a href=\"#\" onclick=\"return loadStaff('s"
+                        + init + "_" + (i+1) + "');\">" + init + "-" + (init + 1) + "</a></div>\n";
          }
       });
-      $('#TimeLineDecade').html(html_stack);
+      $('#Time-Line').html(html_stack);
    });
 }
 

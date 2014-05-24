@@ -1,10 +1,23 @@
+// 建立雙時間軸：年代、年份
+function setTimeLine(page){
+   // 給定參數page，從data/page下面找time_line檔案
+   $.get('data/'+page+'/time_line', function(data) {
+      
+      
+   });
+}
+
+
+
+
+
+
 // 時間軸主軸
 var slider = 2;
 
 // function 1
 $(function() {
    $('#explore').bind('click', function() {
-      $('#credits').hide();
       $('#container')
          .css({'position': 'absolute',
                'left': ($(document).width() - 970) / 2,
@@ -27,67 +40,7 @@ $(function() {
       return false; /* do not add hash at the query */
    });
 
-   $('#credits a').live('click', function() {
-      $('#credits').slideToggle(500);
-      return false;
-   });
-
-   $('#credits-and-info').live('click', function() {
-      $credits = $('#credits');
-      if($credits.is(':visible')) {
-         $credits.slideToggle(500);
-      } else {
-         $credits.show();
-         $('body').animate({
-            scrollTop: $(document).scrollTop() + $credits.height() + 20
-         }, 1000);
-      }
-      return false;
-   });
 });
-
-// function 2
-function loadPage(href) {
-   $info = $('#info');
-   if($info.is(':visible')) {
-      $info.slideUp(500, function() {
-         return loadPageContent(href);
-      });
-   } else {
-      return loadPageContent(href);
-   }
-   return false;
-}
-
-// function 3
-function loadPageContent(href) {
-   $info = $('#info');
-   $info.removeClass('loaded').hide();
-   $info.html('<p id="loading"><img src="image/loading.gif" alt="Loading..."></p>').slideDown(500);
-   $.get(href, function(data) {
-      $info.html(data).addClass('loaded');
-   });
-   $('body').animate({scrollTop: 0}, 1000);
-   return false;
-}
-
-// function 4
-function closeDetail() {
-   $info.slideUp();
-}
-
-// function 5
-function switchTab(anchor) {
-   $('#info a.active').removeClass('active');
-   var tab = $(anchor).addClass('active').attr('data-tab');
-   $('#tabs div:visible').fadeOut(500, function() {
-      $(this).removeClass('active');
-      $('#tab-'+ tab).fadeIn(500, function() {
-         $(this).addClass('active');
-      });
-   });
-   return false;
-}
 
 var thisHalf = 1;
 
@@ -105,7 +58,7 @@ function topslider(variant) {
    return false;
 }
 
-// function 7
+// Silde Comtent
 function slideContent(half) {
    $info = $('#info');
    if($info.is(':visible')) {
