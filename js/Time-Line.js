@@ -5,8 +5,8 @@ var current_year = 2014;
 
 // 建立年份時間軸
 function setTimeLine(v){
-   var html_stack = "<div id='Slider-Container'><div id='Slider'></div></div>\n"
-                  + "<ul id='Yr-Container'>";
+   var html_stack = "<div id='Slider-Container'><center><div id='Slider'></div></center></div>\n"
+                  + "<ul id='Yr-Container'><center>";
    var mi, ma, dec;
    mi = $("#Dec"+ v).attr("mi");
    ma = $("#Dec"+ v).attr("ma");
@@ -24,7 +24,7 @@ function setTimeLine(v){
    if( (time_line_style == 1) && (ma == 9) ){
       html_stack += "<li class='Yr'>" + (dec + 10) + "</li>\n";
    }
-   html_stack += "</ul>";
+   html_stack += "</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 }
 
@@ -39,7 +39,7 @@ function initTimeLine(page){
       time_line_style = parseInt($('s',data).text()); // 取得樣式
 
       // 建立年代選單
-      html_stack += "<div id='Time-Line-Dec'><ul id='Dec-Container'>\n"
+      html_stack += "<div id='Time-Line-Dec'><ul id='Dec-Container'><center>\n"
       $('dec',data).each(function(){
          v  = parseInt($(this).find('v').text()); 
          mi = parseInt($(this).find('i').text()); // min
@@ -51,7 +51,7 @@ function initTimeLine(page){
                      + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
       });
 
-      html_stack += "</ul></div>\n<div id='Time-Line-Yr'></div>";
+      html_stack += "</center></ul></div>\n<div id='Time-Line-Yr'></div>";
       $('#Time-Line').html(html_stack);
 
       // 初始化年份時間軸
