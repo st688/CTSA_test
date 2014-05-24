@@ -8,9 +8,10 @@ function setTimeLine(v){
    // 該年代被選擇
    $(".Dec a").css('color','blue');
    $("#Dec" + v + " a").css('color','red');
-   var html_stack = "<div id='Slider-Container'>"
+   var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<div id='Slider'></div></div>\n"
+                  + "<div id='Slider'></div>"
+                  + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    var mi, ma, dec;
    mi = $("#Dec"+ v).attr("mi");
