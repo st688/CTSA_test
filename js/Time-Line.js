@@ -26,10 +26,11 @@ function setTimeLine(v){
       }
       html_stack += "</li>\n";
    }
+   html_stack += "<li class='Yr'>";
    if( (time_line_style == 1) && (ma == 9) ){
-      html_stack += "<li class='Yr'>" + (dec + 10) + "</li>\n";
+      html_stack += (dec + 10);
    }
-   html_stack += "</center></ul>";
+   html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
    // 不要回到頂端
