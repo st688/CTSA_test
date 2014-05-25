@@ -1,12 +1,15 @@
 #Content{
    margin:0px auto;
-   text-align:left;
+   text-align:center;
 }
 
 #News{
    margin:0px auto;
    width:80%;
+   text-align:left;
 }
 
 #NewsContent{
+   width:80%;
+   text-align:left;
 }
