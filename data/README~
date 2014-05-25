@@ -4,7 +4,7 @@
 
 time_line
 <n>                  // 當前年份
-<s>                  // style, 0代表最細的timeline在年份點上（如2014），1代表timeline跨過年份（如2014~2015）
+<s>                  // 時間軸樣式, 0代表最細的timeline在年份點上（如2014），1代表timeline跨過年份（如2014~2015）
 <dec>                // decade 十年周期，如2010~2019
 <v>                  // 該 decade 的十位以上，如2010~2019 => 201
 <i>                  // min, 該十年周期的起始年個位數
@@ -13,6 +13,14 @@ time_line
 links/
 data:
 <l>  = link          // 連結
+
+news/
+data:
+<e>                  // news event 消息
+<t>                  // title 消息標題
+<m>                  // time 公佈時間
+<a>                  // anouncer 公佈人
+<f>                  // filename 對應 html 片段檔案
 
 staff/
 years:

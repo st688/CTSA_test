@@ -14,6 +14,14 @@ links/
 data:
 <l>  = link          // 連結
 
+news/
+data:
+<e>                  // news event 消息
+<t>                  // title 消息標題
+<m>                  // time 發佈時間
+<a>                  // anouncer 發佈人
+<f>                  // filename 對應 html 片段檔案
+
 staff/
 years:
 <latest>             // 目前的幹部年份，(起始西元年)_(結束西元年個位)
