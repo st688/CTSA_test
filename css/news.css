@@ -3,10 +3,25 @@
    text-align:center;
 }
 
+/*
+ 訊息列表框架
+*/
 #News{
    margin:0px auto;
    width:80%;
    text-align:left;
+}
+#News div{
+   float:left;
+}
+.news_time{
+   width:100px;
+}
+.news_title{
+   width:600px;
+}
+.news_announcer{
+   width:200px;
 }
 
 #NewsContent{
