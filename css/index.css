@@ -49,5 +49,10 @@ body{
  首頁圖片 
 */
 #Content img{
-   height:50%;
+   height:700;
+   opacity: 0.8;
+
+   filter:alpha(opacity=80);  /* suck IE6    */
+   -moz-opacity:0.8;             /* old Mozilla */
+   -khtml-opacity:0.8;           /* old Safari  */
 }
