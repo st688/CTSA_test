@@ -1,4 +1,5 @@
 body{
+   height:100%
    margin:0;
    overflow:scroll;
 
@@ -46,6 +47,16 @@ body{
 }
 
 /*
+ 內文區設定
+*/
+#Content{
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+}
+
+/*
  首頁圖片 
 */
 #MainPic{
@@ -64,7 +75,7 @@ body{
 /*
  頁尾
 */
-footer{
+footer, .push{
    height:60px;
    background-color:#998c7c;
 }
