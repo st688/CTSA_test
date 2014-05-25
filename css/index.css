@@ -1,6 +1,5 @@
 body{
    margin:0;
-   padding:0;
    overflow:scroll;
 
    font-family: Microsoft JhengHei, PMingLiU, Apple LiSung;
@@ -49,21 +48,24 @@ body{
 /*
  首頁圖片 
 */
+#Content{
+   height:500px;
+}
+
 #Content img{
    height:500px;
    opacity: 0.8;
 
    filter:alpha(opacity=80);  /* suck IE6    */
-   -moz-opacity:0.8;             /* old Mozilla */
-   -khtml-opacity:0.8;           /* old Safari  */
+   -moz-opacity:0.8;          /* old Mozilla */
+   -khtml-opacity:0.8;        /* old Safari  */
 }
-
 
 /*
  頁尾
 */
 footer{
-   height:80px;
+   height:60px;
    background-color:#998c7c;
 }
 
@@ -71,5 +73,6 @@ footer{
    height:40px;
    color:#ffffff;
    clear:both;
+   display:table-cell;
    vertical-align:middle;
 }
