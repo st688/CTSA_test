@@ -8,8 +8,9 @@ var year_min = 0;
 var year_max = 9;
 
 // 建立年份時間軸
-function setTimeLine(v){
+function setTimeLine(yr){
    // 該年代被選擇
+   var v = Math.floor(yr/10); // 十位數以上
    $(".Dec a").css('color','blue');
    $("#Dec" + v + " a").css('color','red');
 
@@ -39,22 +40,29 @@ function setTimeLine(v){
    html_stack += "</li>\n</center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
+   // 更新長度參數
+   width_bg  = $("#Slider-Background").width();
+   width_yr  = $(".Yr").width();
+
+   var n = Math.min(yr % 10, year_max); // 可行之個位數，設定產生之軸用
    // 改變 Slider 外型（可能的話再想辦法避免直接把 css 參數打在裡面）
    switch( time_line_style ){
       case 0:
             $("#Slider").css('width', 30 )
-                        .css('left',   0 );
+                        .css('left',  n * width_yr );
          break;
       case 1:
-            $("#Slider").css('width', $(".Yr").width() )
-                        .css('left',  15 );
+            $("#Slider").css('width', width_yr )
+                        .css('left',  15 + n * width_yr );
          break;
    }
-
    // 更新長度參數
    width_sl  = $("#Slider").width();
-   width_bg  = $("#Slider-Background").width();
-   width_yr  = $(".Yr").width();
+
+   current_year = dec + n;
+
+   // 發送「當前年份被選擇」事件
+   triggerYearChosen(current_year);
 
    // 不要回到頂端
    return false;
@@ -79,7 +87,7 @@ function initTimeLine(page){
 
          // 點擊之後建立年份時間軸
          html_stack += "<li id='Dec"+ v + "' mi=" + year_min + " ma=" + year_max + " class='Dec'>" 
-                     + "<a href=\"#\" onclick=\"return setTimeLine(" + v + ");\" >"
+                     + "<a href=\"#\" onclick=\"return setTimeLine(" + (v * 10 + 9) + ");\" >"
                      + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
       });
 
@@ -87,11 +95,8 @@ function initTimeLine(page){
       $('#Time-Line').html(html_stack);
 
       // 初始化年份時間軸
-      setTimeLine(Math.floor(current_year / 10));
+      setTimeLine(current_year);
    });
-
-   // 發送「當前年份被選擇」事件
-   triggerYearChosen(current_year);
 }
 
 // 發送「年份被選擇」事件
