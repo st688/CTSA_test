@@ -68,9 +68,10 @@
 #Slider-Background{
    height:10px;
    width:700px;
+   position:absolute;
    top:20px;
    left:15px;
-   background-color:#CC0033;
+   background-color:#003659;
 }
 /*
  時間軸選條
@@ -80,8 +81,8 @@
    width:30px;
    position:absolute;
    top:10px;
-   left:0;
-   background-color:#00FF00;
+   left:0px;
+   background-color:#008CCC;
 }
 /*
  年份項目框架
