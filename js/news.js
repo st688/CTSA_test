@@ -25,7 +25,7 @@ function loadNewsList() {
 }
 
 function showNews(path){
-   $.get("data/news/" + path, function(data) {
+   $.get("data/news/s" + path, function(data) {
       // 預備輸出的html
       $('#NewsContent').html(data);
    });
