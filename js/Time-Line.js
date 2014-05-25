@@ -43,11 +43,11 @@ function setTimeLine(v){
    switch( time_line_style ){
       case 0:
             $("#Slider").css('width', 30 )
-                        .css('left',  15 );
+                        .css('left',   0 );
          break;
       case 1:
             $("#Slider").css('width', $(".Yr").width() )
-                        .css('left',   0 );
+                        .css('left',  15 );
          break;
    }
 
