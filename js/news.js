@@ -25,12 +25,8 @@ function loadNewsList() {
 }
 
 function showNews(path){
-alert("data/news/s" + path);
    $.get("data/news/s" + path, function(data) {
-alert("yo");
-
       $('#NewsContent').html(data);
-alert("yo2");
    });
    return false;
 }
