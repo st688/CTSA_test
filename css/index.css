@@ -49,7 +49,7 @@ body{
  首頁圖片 
 */
 #Content img{
-   height:500;
+   height:500px;
    opacity: 0.8;
 
    filter:alpha(opacity=80);  /* suck IE6    */
