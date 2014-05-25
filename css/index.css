@@ -56,3 +56,14 @@ body{
    -moz-opacity:0.8;             /* old Mozilla */
    -khtml-opacity:0.8;           /* old Safari  */
 }
+
+
+/*
+ 頁尾
+*/
+#Copyright{
+   width:100%;
+   background-color:#998c7c;
+   color:#ffffff;
+}
+
