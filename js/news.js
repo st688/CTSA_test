@@ -25,9 +25,12 @@ function loadNewsList() {
 }
 
 function showNews(path){
+alert("data/news/s" + path);
    $.get("data/news/s" + path, function(data) {
-      // 預備輸出的html
+alert("yo");
+
       $('#NewsContent').html(data);
+alert("yo2");
    });
    return false;
 }
