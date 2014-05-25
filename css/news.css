@@ -10,7 +10,7 @@
    margin:0px auto;
    width:80%;
    text-align:left;
-   display:block;
+   display:table-cell;
 }
 #News div{
    float:left;
