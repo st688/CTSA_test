@@ -62,8 +62,8 @@ body{
  頁尾
 */
 #Copyright{
+   margin:0;
    width:100%;
    background-color:#998c7c;
    color:#ffffff;
 }
-
