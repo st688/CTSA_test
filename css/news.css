@@ -10,7 +10,7 @@
    margin:0px auto;
    width:80%;
    text-align:left;
-   clear:both;
+   display:block;
 }
 #News div{
    float:left;
@@ -29,4 +29,5 @@
    margin:0px auto;
    width:80%;
    text-align:left;
+   display:block;
 }
