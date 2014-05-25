@@ -13,7 +13,7 @@ function loadNewsList() {
 
          // 生成連結
          html_stack += "<div class='news'>\n"
-                     + "<a href=\"#\" onclick='showNews(" + f + ")'>"
+                     + "<a href=\"#\" onclick='return showNews(\"" + f + "\");'>"
                      + "   <div class='news_time'>"      + m + "</div>\n"
                      + "   <div class='news_title'>"     + t + "</div>\n"
                      + "   <div class='news_announcer'>" + a + "</div>\n"
