@@ -48,9 +48,6 @@ body{
 /*
  首頁圖片 
 */
-#Content{
-   height:100%;
-}
-#MainPic{
+#Content img{
    height:50%;
 }
