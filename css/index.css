@@ -1,5 +1,6 @@
 body{
    margin:0;
+   padding:0;
    overflow:scroll;
 
    font-family: Microsoft JhengHei, PMingLiU, Apple LiSung;
@@ -67,7 +68,7 @@ footer{
 }
 
 #Copyright{
-   height:40;
+   height:40px;
    color:#ffffff;
    clear:both;
    vertical-align:middle;
