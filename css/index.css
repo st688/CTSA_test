@@ -67,6 +67,8 @@ footer{
 }
 
 #Copyright{
+   height:40;
    color:#ffffff;
    clear:both;
+   vertical-align:middle;
 }
