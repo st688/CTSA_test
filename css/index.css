@@ -48,11 +48,11 @@ body{
 /*
  首頁圖片 
 */
-#Content{
+#MainPic{
    height:500px;
 }
 
-#Content img{
+#MainPic img{
    height:500px;
    opacity: 0.8;
 
