@@ -20,3 +20,37 @@ body{
    height:90%;
 }
 
+/*
+ 浮動連結樣式，平時透明，滑鼠在上變實心
+*/
+#Badge-Panel{
+   top:300px;
+   right:50px;
+   position:fixed;
+}
+.Badge a img{
+   height:50px;
+   opacity: 0.5;
+
+   filter:alpha(opacity=50);  /* suck IE6    */
+   -moz-opacity:0.5;          /* old Mozilla */
+   -khtml-opacity: 0.5;       /* old Safari  */
+}
+.Badge a:hover img{
+   height:50px;
+   opacity: 1;
+
+   filter:alpha(opacity=100);  /* suck IE6    */
+   -moz-opacity:1;             /* old Mozilla */
+   -khtml-opacity:1;           /* old Safari  */
+}
+
+/*
+ 首頁圖片 
+*/
+#Content{
+   height:100%;
+}
+#Content img{
+   height:50%;
+}
