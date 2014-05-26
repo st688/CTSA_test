@@ -86,7 +86,8 @@ body{
 #Pop-Screen-Content{
    height:80%;
    width:80%;
-
+   top:50%;
+   left:50%;
    position:fixed;
 
    background-color:white;

@@ -4,7 +4,9 @@ function popScreen(page_path){
       $("#Pop-Screen-Content").html(data);
    });
 
-   $("#Pop-Screen").css('display','block');
+   $("#Pop-Screen").css('display','block')
+                   .css('margin-top', -$("#Pop-Screen").height()/2)
+                   .css('margin-left', -$("#Pop-Screen").width()/2);
    return false;
 }
 
