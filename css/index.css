@@ -66,7 +66,7 @@ body{
  彈出視窗
 */
 #Pop-Screen{
-   display:hidden !important;
+   display:none;
 }
 #Pop-Screen-Background{
    height:100%;
