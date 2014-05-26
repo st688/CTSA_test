@@ -99,10 +99,11 @@ body{
 }
 
 /*
- 內文區
+ 內文區背景
 */
 #Content-Background{
    margin:0;
+   padding:0;
    width:100%;
    background-color:white;
 }
