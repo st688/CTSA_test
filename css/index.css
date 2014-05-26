@@ -107,6 +107,13 @@ body{
    width:100%;
    background-color:white;
 }
+/*
+ 內文無margin
+*/
+p{
+   margin:0;
+}
+
 
 /*
  頁尾
