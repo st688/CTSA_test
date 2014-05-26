@@ -9,7 +9,7 @@ function popScreen(page_path){
 }
 
 // 關閉視窗
-function closeScreen(){
+function closePopScreen(){
    $("#Pop-Screen").css('display','none');
    return false;
 }
