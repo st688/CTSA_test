@@ -101,7 +101,8 @@ body{
 /*
  內文區
 */
-#Content{
+#Content-Background{
+   margin:0;
    width:100%;
    background-color:white;
 }
