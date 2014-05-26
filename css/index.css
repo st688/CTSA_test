@@ -1,6 +1,7 @@
 body{
    margin:0;
    overflow:scroll;
+   background-color:#998c7c;
 
    font-family: Microsoft JhengHei, PMingLiU, Apple LiSung;
 }
@@ -9,7 +10,7 @@ body{
  標題Logo樣式 
 */
 #TopLogo{
-   margin:10px;
+   padding:10px;
    height:140px;
    width:100%;
    background-color:white;
@@ -40,9 +41,9 @@ body{
    height:50px;
    opacity: 1;
 
-   filter:alpha(opacity=100);  /* suck IE6    */
-   -moz-opacity:1;             /* old Mozilla */
-   -khtml-opacity:1;           /* old Safari  */
+   filter:alpha(opacity=100); /* suck IE6    */
+   -moz-opacity:1;            /* old Mozilla */
+   -khtml-opacity:1;          /* old Safari  */
 }
 
 /*
@@ -62,11 +63,54 @@ body{
 }
 
 /*
+ 彈出視窗
+*/
+#Pop-Screen{
+   display:hidden;
+}
+#Pop-Screen-Background{
+   height:100%;
+   width:100%;
+   top:0px;
+   left:0px;
+   position:fixed;
+
+   background-color:black;
+   opacity: 0.8;
+   z-index:10000;
+
+   filter:alpha(opacity=80);  /* suck IE6    */
+   -moz-opacity:0.8;          /* old Mozilla */
+   -khtml-opacity:0.8;        /* old Safari  */
+}
+#Pop-Screen-Content{
+   height:100px;
+   width:100px;
+   margin-top:-50px;          /* -height/2 */
+   margin-left:-50px;         /* -width/2  */
+   top:50%;
+   left:50%;
+
+   position:fixed;
+
+   background-color:white;
+   vertical-align:middle;
+   z-index:10001;
+}
+
+/*
+ 內文區
+*/
+#Content{
+   width:100%;
+   background-color:white;
+}
+
+/*
  頁尾
 */
 footer{
    min-height:60px;
-   background-color:#998c7c;
 }
 
 #Copyright{
