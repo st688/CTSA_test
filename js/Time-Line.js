@@ -44,7 +44,7 @@ function setTimeLine(yr){
    width_bg  = $("#Slider-Background").width();
    width_yr  = $(".Yr").width();
 
-   var n = Math.min(yr % 10, year_max); // 可行之個位數，設定產生之軸用
+   var n = Math.max(Math.min(yr % 10, year_max),year_min); // 可行之個位數，設定產生之軸用
    // 改變 Slider 外型（可能的話再想辦法避免直接把 css 參數打在裡面）
    switch( time_line_style ){
       case 0:
