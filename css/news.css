@@ -9,6 +9,7 @@
 #News{
    margin:0px auto;
    width:80%;
+   clear:both;
 }
 .news div{
    float:left;
