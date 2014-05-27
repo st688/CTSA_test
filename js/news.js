@@ -23,10 +23,7 @@ function loadNewsList() {
       $('#News').html(html_stack);
   
       // 置中
-      var news_len = $('.news_time')     .width() 
-                   + $('.news_title')    .width() 
-                   + $('.news_announcer').width();
-      $('.news').css('left', ($('#News').width() -news_len)/2);
+      $('.news').css('margin-left', -$(".news").width()/2);
    });
 }
 
