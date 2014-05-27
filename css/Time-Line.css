@@ -44,7 +44,7 @@
 .Dec{
    height:50px;
    width:100px;
-   top:25px;
+   margin-top:25px;
    display:table-cell;
    color:blue;
    text-align:center;
