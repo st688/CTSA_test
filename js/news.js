@@ -13,7 +13,7 @@ function loadNewsList() {
 
          // 生成連結
          html_stack += "<div class='news'>\n"
-                     + "<a href=\"#\" onclick='return showNews(\"" + f + "\");'>"
+                     + "<a href=\"#\" onclick='return popScreen(\"data/news/s" + f + "\");'>"
                      + "   <div class='news_time'>"      + m + "</div>\n"
                      + "   <div class='news_title'>"     + t + "</div>\n"
                      + "   <div class='news_announcer'>" + a + "</div>\n"
@@ -22,13 +22,6 @@ function loadNewsList() {
       });
       $('#News').html(html_stack);
    });
-}
-
-function showNews(path){
-   $.get("data/news/s" + path, function(data) {
-      $('#NewsContent').html(data);
-   });
-   return false;
 }
 
 addLoadEvent(loadNewsList());
