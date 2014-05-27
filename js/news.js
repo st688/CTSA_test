@@ -23,8 +23,8 @@ function loadNewsList() {
       $('#News').html(html_stack);
   
       // 置中
-      $('.news').css('margin-top',  -$("#News").height()/2)
-                .css('margin-left', -$("#News").width() /2);
+      $('.news').css('margin-top',  -$(".news").height()/2)
+                .css('margin-left', -$(".news").width() /2);
    });
 }
 
