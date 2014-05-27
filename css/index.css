@@ -93,6 +93,7 @@ body{
    background-color:white;
    vertical-align:middle;
    z-index:10001;
+   overflow:auto;
 }
 
 /*
