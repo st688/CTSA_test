@@ -10,7 +10,7 @@ body{
  標題Logo樣式 
 */
 #TopLogo{
-   padding:10px;
+   padding:10px 0px;
    height:140px;
    width:100%;
    background-color:white;
