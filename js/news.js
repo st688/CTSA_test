@@ -12,13 +12,13 @@ function loadNewsList() {
          f = $(this).find('f').text(); // 對應檔案
 
          // 生成連結
-         html_stack += "<center><div class='news'>\n"
-                     + "<a href=\"#\" onclick='return popScreen(\"data/news/s" + f + "\");'>"
+         html_stack += "<div class='news'>\n"
+                     + "<a href=\"#\" onclick='return popScreen(\"data/news/s" + f + "\");'><center>"
                      + "   <div class='news_time'>"      + m + "</div>\n"
                      + "   <div class='news_title'>"     + t + "</div>\n"
                      + "   <div class='news_announcer'>" + a + "</div>\n"
-                     + "</a>"
-                     + "</div></center>\n";
+                     + "</center></a>"
+                     + "</div>\n";
       });
       $('#News').html(html_stack);
    });
