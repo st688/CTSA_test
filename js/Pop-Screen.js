@@ -6,7 +6,7 @@ function popScreen(page_path){
 
    $("#Pop-Screen").css('display','block');
    $("#Pop-Screen-Content").css('margin-top',  -$("#Pop-Screen-Content").height()/2)
-                           .css('margin-left', -$("#Pop-Screen-Content").width()/2 );
+                           .css('margin-left', -$("#Pop-Screen-Content").width() /2);
    return false;
 }
 

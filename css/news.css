@@ -10,6 +10,10 @@
    width:80%;
    display:table-cell;
 }
+.news{
+   top:50%;
+   left:50%;
+}
 .news div{
    float:left;
    text-align:left;

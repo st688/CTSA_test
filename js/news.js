@@ -13,14 +13,18 @@ function loadNewsList() {
 
          // 生成連結
          html_stack += "<div class='news'>\n"
-                     + "<a href=\"#\" onclick='return popScreen(\"data/news/s" + f + "\");'><center>"
+                     + "<a href=\"#\" onclick='return popScreen(\"data/news/s" + f + "\");'>"
                      + "   <div class='news_time'>"      + m + "</div>\n"
                      + "   <div class='news_title'>"     + t + "</div>\n"
                      + "   <div class='news_announcer'>" + a + "</div>\n"
-                     + "</center></a>"
+                     + "</a>"
                      + "</div>\n";
       });
       $('#News').html(html_stack);
+  
+      // 置中
+      $('.news').css('margin-top',  -$("#News").height()/2)
+                .css('margin-left', -$("#News").width() /2);
    });
 }
 
