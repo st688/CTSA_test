@@ -37,7 +37,7 @@
    margin:0;
    padding:0;
    list-style-type:none;
-   position:relative;
+   vertical-align:bottom;
 }
 /*
  年代選項
@@ -45,13 +45,11 @@
 .Dec{
    height:50px;
    width:100px;
-   display:block;
+   top:25px;
+   display:table-cell;
    color:blue;
    text-align:center;
    vertical-align:middle;
-
-   position:absolute;
-   bottom:0;
 
    border:3px solid;
    border-radius:10px;
