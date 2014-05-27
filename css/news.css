@@ -9,14 +9,12 @@
 #News{
    margin:0px auto;
    width:80%;
-   text-align:left;
+   text-align:center;
    display:table-cell;
-}
-.news{
-   margin:0px auto;
 }
 .news div{
    float:left;
+   text-align:left;
 }
 .news_time{
    width:100px;
