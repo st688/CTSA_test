@@ -12,7 +12,10 @@
    text-align:left;
    display:table-cell;
 }
-#News div{
+.news{
+   margin:0px auto;
+}
+.news div{
    float:left;
 }
 .news_time{
