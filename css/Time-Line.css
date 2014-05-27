@@ -47,7 +47,7 @@
    display:table-cell;
    color:blue;
    text-align:center;
-   vertical-align:middle;
+   vertical-align:bottom;
 
    border:3px solid;
    border-radius:10px;
@@ -58,11 +58,11 @@
    transition: all 0.5s ease-in;
 }
 .Dec:hover{
-   -moz-transform:scale(1.5);
-   -webkit-transform:scale(1.5);
-   -o-transform:scale(1.5);
-   -ms-transform:scale(1.5);
-   transform:scale(1.5);
+   -moz-transform:translateY(-25px);
+   -webkit-transform:translateY(-25px);
+   -o-transform:translateY(-25px);
+   -ms-transform:translateY(-25px);
+   transform:translateY(-25px);
 }
 /*
  年份框架
