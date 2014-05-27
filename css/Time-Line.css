@@ -37,7 +37,7 @@
    margin:0;
    padding:0;
    list-style-type:none;
-   vertical-align:bottom;
+   position:relative;
 }
 /*
  年代選項
@@ -49,6 +49,9 @@
    color:blue;
    text-align:center;
    vertical-align:middle;
+
+   position:absolute;
+   bottom:0;
 
    border:3px solid;
    border-radius:10px;
