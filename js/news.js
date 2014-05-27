@@ -26,7 +26,7 @@ function loadNewsList() {
       var news_len = $('.news_time')     .width() 
                    + $('.news_title')    .width() 
                    + $('.news_announcer').width();
-      $('.news').css('margin-left', ($('#News').width() -news_len)/2);
+      $('.news').css('left', ($('#News').width() -news_len)/2);
    });
 }
 
