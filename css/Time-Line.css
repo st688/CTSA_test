@@ -45,6 +45,9 @@
    display:table-cell;
    color:blue;
    vertical-align:middle;
+
+   border:3px solid;
+   border-radius:10px;
 }
 　
 /*
@@ -72,6 +75,8 @@
    top:20px;
    left:15px;
    background-color:#003659;
+
+   border-radius:3px;
 }
 /*
  時間軸選條
@@ -83,6 +88,8 @@
    top:10px;
    left:0px;
    background-color:#008CCC;
+
+   border-radius:5px;
 }
 /*
  年份項目框架
