@@ -96,6 +96,10 @@ body{
    overflow:auto;
 }
 
+#Pop-Screen-Content .Title{
+   font-size:150%;
+}
+
 /*
  內文區背景
 */
