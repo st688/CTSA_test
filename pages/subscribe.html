@@ -1,1 +1,49 @@
-加入CTSA E-List
+<div class="Title">加入CTSA E-list</div>
+<form action="https://www.list.cornell.edu:9443/subscribe/subscribe.tml" method="POST">
+   <table border=0 cellspacing=0 cellpadding=3>
+      <tr>
+         <td align="right">
+            <font size=1>Email address: </font>
+         </td>
+         <td>
+            <input type="text" name="email" value="" SIZE=10>
+         </td>
+         <td>
+	    <input type="image" border="0" height="19" width="73" title="subscribe" alt="subscribe" src="https://www.list.cornell.edu:9443/img/english/button_subscribe.gif"  name="subscribe" align="left">
+         </td>
+      </tr>
+      <tr>
+         <td align="right">
+            <font size=1><I>(required)</I> Your name: </font>
+         </td>
+         <td>
+            <INPUT TYPE="text" NAME="name" VALUE="" SIZE=10 MAXLENGTH=100>
+         </td>
+      </tr>
+   </table>
+   <input type="hidden" name="list" value="ctsa-l">
+   <input type="hidden" name="name_required" value="T">
+   <input type="hidden" name="confirm" value="one">
+   <input type="hidden" name="showconfirm" value="T">
+</form>
+
+<div class="Title">退出CTSA E-list</div>
+<form action="https://www.list.cornell.edu:9443/subscribe/unsubscribe.tml" method="GET">
+   <table border=0 cellspacing=0 cellpadding=3>
+      <tr>
+         <td>
+            <font size=1>Email address: </font>
+         </td>
+         <td>
+            <input type="text" name="email" value="" size=10>
+         </td>
+         <td>
+            <input type="image" border="0" height="19" width="84" title="unsubscribe" alt="unsubscribe" src="https://www.list.cornell.edu:9443/img/english/button_unsubscribe.gif" name="unsubscribe">
+         </td>
+      </tr>
+   </table>
+   <input type="hidden" name="email_notification" value="T">
+   <input type="hidden" name="confirm_first" value="T">
+   <input type="hidden" name="showconfirm" value="T">
+   <input type="hidden" name="lists" value="ctsa-l">
+</form>
