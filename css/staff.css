@@ -74,10 +74,16 @@
 /*
  Email 連結的樣式設定
 */
-#EMail a:link   {color:blue; text-decoration:none;}
-#EMail a:visited{color:blue; text-decoration:none;}
-#EMail a:hover  {color:red;  text-decoration:none;}
-#EMail a:active {color:red;  text-decoration:none;}
+#Email a{
+   text-decoration:none;
+}
+#EMail a:link,  a:visited{
+   color:blue;
+}
+
+#EMail a:hover, a:active {
+   color:red; 
+}
 
 /*
  照片區

@@ -42,10 +42,9 @@
 /*
  讓選項超連結不要有底線跟變色
 */
-.Menu-Bar a:link   {text-decoration:none;}
-.Menu-Bar a:visited{text-decoration:none;}
-.Menu-Bar a:hover  {text-decoration:none;}
-.Menu-Bar a:active {text-decoration:none;}
+.Menu-Bar a{
+   text-decoration:none;
+}
 
 /*
  選項按鈕

@@ -12,7 +12,9 @@ function setTimeLine(yr){
    // 該年代被選擇
    var v = Math.floor(yr/10); // 十位數以上
    $(".Dec a").css('color','blue');
+   $(".Dec")  .css('color','blue');
    $("#Dec" + v + " a").css('color','red');
+   $("#Dec" + v )      .css('color','red');
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
