@@ -48,7 +48,6 @@
    color:blue;
    background-color:white;
    text-align:center;
-   text-decoration:none;
    vertical-align:middle;
 
    border:3px solid;
@@ -66,6 +65,10 @@
    -ms-transform:translateY(-20px);
    transform:translateY(-20px);
 }
+.Dec a{
+   text-decoration:none;
+}
+
 /*
  年份框架
 */
