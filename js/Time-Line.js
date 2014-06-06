@@ -11,10 +11,8 @@ var year_max = 9;
 function setTimeLine(yr){
    // 該年代被選擇
    var v = Math.floor(yr/10); // 十位數以上
-   $(".Dec a").css('color','blue');
-   $(".Dec")  .css('color','blue');
-   $("#Dec" + v + " a").css('color','red');
-   $("#Dec" + v )      .css('color','red');
+   $(".Dec").css('color','blue');     // 全部先改回藍色
+   $("#Dec" + v ).css('color','red'); // 改選中者為紅色
 
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
@@ -88,9 +86,9 @@ function initTimeLine(page){
          year_max = parseInt($(this).find('a').text()); // max
 
          // 點擊之後建立年份時間軸
-         html_stack += "<li id='Dec"+ v + "' mi=" + year_min + " ma=" + year_max + " class='Dec'>" 
-                     + "<a href=\"#\" onclick=\"return setTimeLine(" + (v * 10 + 9) + ");\" >"
-                     + (v*10) + "-" + ((v+1)*10) + "</a></li>\n";
+         html_stack += "<a href=\"#\" onclick=\"return setTimeLine(" + (v * 10 + 9) + ");\" >"
+                     + "<li id='Dec"+ v + "' mi=" + year_min + " ma=" + year_max + " class='Dec'><p>" 
+                     + (v*10) + "-" + ((v+1)*10) + "</p></li></a>\n";
       });
 
       html_stack += "</center></ul></div>\n<div id='Time-Line-Yr'></div>";
