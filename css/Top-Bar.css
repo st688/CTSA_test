@@ -37,13 +37,7 @@
    width:160px;
    display:table-cell;
    vertical-align:middle;
-}
-
-/*
- 讓選項超連結不要有底線跟變色
-*/
-.Menu-Bar a{
-   text-decoration:none;
+   cursor: pointer;
 }
 
 /*

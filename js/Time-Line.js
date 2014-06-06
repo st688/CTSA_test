@@ -11,8 +11,8 @@ var year_max = 9;
 function setTimeLine(yr){
    // 該年代被選擇
    var v = Math.floor(yr/10); // 十位數以上
-   $(".Dec")  .css('color','blue'); // 外框顏色
-   $("#Dec" + v )      .css('color','red'); // 外框顏色
+   $(".Dec").css('color','blue');     // 全部改為藍色
+   $("#Dec" + v ).css('color','red'); // 改選中者為紅色
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
                   + "<a href=\"#\" onmousedown=\"fMouseDown(event);\" onclick=\"return false\"><div id='Slider'></div></a>"

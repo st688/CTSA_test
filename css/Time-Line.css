@@ -48,8 +48,8 @@
    color:blue;
    background-color:white;
    text-align:center;
-   text-decoration:none;
    vertical-align:middle;
+   cursor: pointer;
 
    border:3px solid;
    border-radius:10px;
@@ -60,7 +60,7 @@
    -ms-transition:     all 0.5s ease-in;
    -o-transition:      all 0.5s ease-in;
 
-   transition:         all 0.5s ease-in;
+   transition:         all 0.5s ease-in;   
 }
 .Dec:hover{
    /* 等到css3普及至所有瀏覽器後可以省略 */
