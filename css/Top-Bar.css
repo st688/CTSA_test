@@ -39,6 +39,8 @@
    vertical-align:middle;
    cursor: pointer;
 }
+.Menu-Bar li:hover{
+}
 
 /*
  選項按鈕
