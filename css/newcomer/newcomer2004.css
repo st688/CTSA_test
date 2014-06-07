@@ -2,10 +2,18 @@
    margin:0px auto;
 }
 
-#Newcomer-Menu-List{
+#Authors{
 
 }
 
-#Newcomer-Container{
+#Newcomer-Menu-List li{
+   display:table-cell;
+   vertical-align:middle;
+   border-style: none solid;
+   color:gray;
+   cursor:pointer;
+}
 
+#Newcomer-Container{
+   
 }
