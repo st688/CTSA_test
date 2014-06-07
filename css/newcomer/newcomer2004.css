@@ -14,16 +14,17 @@
    left:50px;
    position:fixed;
    text-align:center;
-   vertical-align:middle;
    list-style-type:none;
 }
 #Authors p{
    height:30px;
    font-weight:bold;
+   vertical-align:middle;
    background-color:#ffff99;   
 }
 #Authors li{
    height:30px;
+   vertical-align:middle;
    background-color:#ffffcc;
 }
 
