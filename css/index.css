@@ -55,7 +55,7 @@ body{
 }
 
 #MainPic img{
-   height:500px;
+   height:400px;
    opacity: 0.8;
 
    filter:alpha(opacity=80);  /* suck IE6    */
@@ -67,11 +67,11 @@ body{
  圖片上方的宣傳區
 */
 #Announcement{
-   margin:0px 100px 0px 0px;
    padding:10px;
-   top:250px;
+   top:50%;
+   left:50%;
    height:200px;
-   width:100px;
+   width:400px;
    position:absolute;
    background-color:white;
    border-radius:10px;
