@@ -1,4 +1,5 @@
 #Content{
+   width:80%;
    margin:0px auto;
    text-align:center;
    list-style-type:none;
@@ -53,7 +54,7 @@
    width:310px;
    height:120px;
 
-   background-color:#ccc1b2; /* warm gray 3 */
+   background-color:#f7f7f7;
    display:inline-block;
    border-radius:5px;
 }
