@@ -1,8 +1,11 @@
 #Content{
    margin:0px auto;
-   padding:0;
    text-align:center;
    list-style-type:none;
+}
+
+.Menu-List{
+   padding:0px;
 }
 
 .Menu-List li{
