@@ -1,8 +1,11 @@
 #Content{
    width:80%;
    margin:0px auto;
-   padding:0;
    text-align:center;
+}
+
+#Content ul{
+   padding:0;
 }
 
 #Authors{
@@ -40,4 +43,5 @@
    margin:0px auto;
    width:80%;
    text-align:justify;
+   text-justify:inter-ideograph; /* for IE only */
 }
