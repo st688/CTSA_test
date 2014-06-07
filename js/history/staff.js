@@ -1,5 +1,5 @@
 function loadStaff(yeartag) {
-   $.get("data/staff/" + yeartag, function(data) {
+   $.get("data/history/staff/" + yeartag, function(data) {
       // 預備輸出的html
       var html_stack = "";
       // data內容的定義如staff/README
@@ -33,7 +33,7 @@ function loadStaff(yeartag) {
                html_stack += "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
             html_stack += "</div>\n</div>\n<div id='MemberPhoto'>"
-                        + "<img height=80 width=80 onerror=\"this.src='images/staff/noImg.jpg'\" src=\"images/staff/" 
+                        + "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
                         + i + ".jpg\" />"
                         + "</div>\n</div>\n";
          });
@@ -50,7 +50,7 @@ function initStaff(){
    $("#Content").bind("e_YearChosen", function(e,yr){
       loadStaff("s" + yr + "_" + ((yr+1)%10) );
    });
-   initTimeLine("staff");
+   initTimeLine("history/staff");
 }
 
 addLoadEvent(initStaff());
