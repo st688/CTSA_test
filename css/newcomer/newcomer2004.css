@@ -14,6 +14,7 @@
    left:50px;
    position:fixed;
    text-align:center;
+   vertical-align:middle;
    list-style-type:none;
 }
 #Authors p{
