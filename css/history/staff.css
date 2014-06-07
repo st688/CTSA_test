@@ -70,7 +70,7 @@
 */
 .MemberDescription{
    width:200px;
-   float:right;
+
    word-wrap:break-word;
    display:inline-block;
    vertical-align:middle;
@@ -106,7 +106,7 @@
 */
 .MemberPhoto{
    width:100px;
-   float:left;
+
    display:inline-block;
    vertical-align:middle;
 }
