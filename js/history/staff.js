@@ -37,7 +37,7 @@ function loadStaff(yeartag) {
             } else {
                html_stack += "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
-            html_stack += "</div>\n</div>\n";
+            html_stack += "</div>\n</div>\n</div>\n";
          });
          html_stack += "</div>\n";
       });
