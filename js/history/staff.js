@@ -7,32 +7,32 @@ function loadStaff(yeartag) {
          var tc, te, m, m_len, c, e, a, i, em;         
 
          // 生成職位資料
-         html_stack += "<div id='Position'>\n";
+         html_stack += "<div class='Position'>\n";
          tc = $(this).find('tc').text();
          te = $(this).find('te').text();
 
-         html_stack += "<div id='PositionDescription'>\n"
-                     + "<div id='ChineseTitle'>" + tc + "</div>\n"
-                     + "<div id='EnglishTitle'>" + te + "</div>\n"
+         html_stack += "<div class='PositionDescription'>\n"
+                     + "<div class='ChineseTitle'>" + tc + "</div>\n"
+                     + "<div class='EnglishTitle'>" + te + "</div>\n"
                      + "</div>\n";
          $('m',$(this)).each(function(){
             // 生成個人資料
-            html_stack += "<div id='Member'>\n<div id='MemberDescription'>\n";
+            html_stack += "<div class='Member'>\n<div class='MemberDescription'>\n";
             c = $(this).find('c').text();
             e = $(this).find('e').text();
             a = $(this).find('a').text();
-            html_stack += "<div id='ChineseName'>" + c + "</div>\n"
-                        + "<div id='EnglishName'>" + e + "</div>\n"
-                        + "<div id='Major'>"       + a + "</div>\n";
+            html_stack += "<div class='ChineseName'>" + c + "</div>\n"
+                        + "<div class='EnglishName'>" + e + "</div>\n"
+                        + "<div class='Major'>"       + a + "</div>\n";
             i = $(this).find('i').text();
             em = $(this).find('em').text();
-            html_stack += "<div id='EMail'>";
+            html_stack += "<div class='EMail'>";
             if((em == "") && (i != "") ){
                html_stack += "<a href=\"mailto:"+i+"@cornell.edu\">"+i+"@cornell.edu</a>";
             } else {
                html_stack += "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
-            html_stack += "</div>\n</div>\n<div id='MemberPhoto'>"
+            html_stack += "</div>\n</div>\n<div class='MemberPhoto'>"
                         + "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
                         + i + ".jpg\" />"
                         + "</div>\n</div>\n";

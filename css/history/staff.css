@@ -21,7 +21,7 @@
 /*
  外層框架
 */
-#Staff{
+.Staff{
    margin:0px auto;
    width:80%;
 }
@@ -29,25 +29,25 @@
 /*
  職位框架
 */
-#Position{
+.Position{
 }
 /*
  職位描述區
 */
-#PositionDescription{
+.PositionDescription{
 }
 /*
  中英文職稱
 */
-#ChineseTitle{
+.ChineseTitle{
 }
-#EnglishTitle{
+.EnglishTitle{
 }
 
 /*
  成員框架
 */
-#Member{
+.Member{
    margin:5px;
    padding:5px;
    width:310px;
@@ -58,7 +58,7 @@
    border-radius:5px;
 }
 /* 調整內文垂直置中用 */
-#Member:before{
+.Member:before{
    content:'';
    display:inline-block;
    vertical-align:middle;
@@ -68,7 +68,7 @@
 /*
  描述區
 */
-#MemberDescription{
+.MemberDescription{
    width:200px;
    float:right;
    word-wrap:break-word;
@@ -78,33 +78,33 @@
 /*
  中英文姓名
 */
-#ChineseName{
+.ChineseName{
 }
-#EnglishName{
+.EnglishName{
 }
 /*
  主修
 */
-#Major{
+.Major{
 }
 /*
  Email 連結的樣式設定
 */
-#Email a{
+.Email a{
    text-decoration:none;
 }
-#EMail a:link,  a:visited{
+.EMail a:link,  a:visited{
    color:blue;
 }
 
-#EMail a:hover, a:active {
+.EMail a:hover, a:active {
    color:red; 
 }
 
 /*
  照片區
 */
-#MemberPhoto{
+.MemberPhoto{
    width:100px;
    float:left;
    display:inline-block;
