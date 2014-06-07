@@ -51,6 +51,8 @@
    margin:5px;
    padding:5px;
    width:310px;
+
+   background-color:#ccc1b2; /* warm gray 3 */
    display:inline-block;
    border-radius:5px;
 }
