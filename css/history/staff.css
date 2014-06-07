@@ -59,9 +59,6 @@
 }
 /* 調整內文垂直置中用 */
 .Member:before{
-   content:'';
-   display:inline-block;
-   vertical-align:middle;
    height:100%;
 }
 
@@ -70,7 +67,6 @@
 */
 .MemberDescription{
    width:200px;
-
    word-wrap:break-word;
    display:inline-block;
    vertical-align:middle;
@@ -106,7 +102,6 @@
 */
 .MemberPhoto{
    width:100px;
-
    display:inline-block;
    vertical-align:middle;
 }
