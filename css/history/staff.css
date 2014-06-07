@@ -57,6 +57,11 @@
    display:inline-block;
    border-radius:5px;
 }
+/* 調整內文垂直置中用 */
+#Member:before{
+   height:100%;
+}
+
 /*
  描述區
 */
@@ -64,6 +69,8 @@
    width:200px;
    float:right;
    word-wrap:break-word;
+   display:inline-block;
+   vertical-align:middle;
 }
 /*
  中英文姓名
@@ -95,7 +102,8 @@
  照片區
 */
 #MemberPhoto{
-   margin:auto 0px;
    width:100px;
    float:left;
+   display:inline-block;
+   vertical-align:middle;
 }
