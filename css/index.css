@@ -126,8 +126,11 @@ footer{
 }
 
 footer div{
-   height:40px;
    color:#ffffff;
+}
+
+#Copyright{
+   height:40px;
    clear:both;
    display:table-cell;
    vertical-align:middle;
