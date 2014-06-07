@@ -11,7 +11,7 @@ function loadLinks() {
          // 生成連結
          html_stack += "<div class='link'>\n"
                      + "   <div class='title'>" + t + "</div>\n"
-                     + "   <div class='href'><a href=\"http://" + a + "\">" + a + "</a></div>\n"
+                     + "   <div class='href'><a href=\"#\" onlclick=\"return loadNewScreen('http://" + a + "');\">" + a + "</a></div>\n"
                      + "</div>\n";
 
       });
