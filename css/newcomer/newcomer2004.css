@@ -45,3 +45,115 @@
    text-align:justify;
    text-justify:inter-ideograph; /* for IE only */
 }
+
+
+
+
+/* 舊網頁 css 設定 */
+.head1{
+   font-family: "verdana", "arial", "helvetica";
+   font-size: 15px;
+   line-height: 20px;
+   color: 333333;
+   font-weight:bold;
+   text-decoration: none;
+}
+.head2{
+   font-family: "verdana", "arial", "helvetica";
+   font-size: 12px;
+   line-height: 18px;
+   color: 333333;
+   font-weight:bold;
+   text-decoration: none;
+}
+.head3{
+   font-family: "verdana", "arial", "helvetica";
+   font-size: 11px;
+   line-height: 18px;
+   color: 333333;
+   font-weight:bold;
+   text-decoration: none;
+}
+
+.redhead1{
+   font-family: "Arial", "Helvetica", "sans-serif";
+   font-size: 16px;
+   line-height: 18px;
+   color: C00000;
+   font-weight:bold;
+   text-decoration: none;
+}
+.redhead2{
+   font-family: verdana, arial, helvetica;
+   font-size: 12px;
+   line-height: 18px;
+   color: C00000;
+   font-weight:bold;
+   text-decoration: none;
+}
+.redhead3{
+   font-family: verdana, arial, helvetica;
+   font-size: 11px;
+   line-height: 15px;
+   color: C00000;
+   font-weight:bold;
+   text-decoration: none;
+}
+
+.redheadul1 	{font-family: verdana, arial, helvetica; font-size: 16px; line-height: 24px; color: C00000; font-weight:bold;  text-decoration: underline}
+.redheadul2		{font-family: verdana, arial, helvetica; font-size: 12px; line-height: 18px; color: C00000; font-weight:bold;  text-decoration: underline}
+.redheadul3 	{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: C00000; font-weight:bold;  text-decoration: underline}
+
+.redheadulhover1 		{font-family: verdana, arial, helvetica; font-size: 16px; line-height: 24px; color: C00000; font-weight:bold;  text-decoration: none}
+.redheadulhover2		{font-family: "verdana", "arial", "helvetica"; font-size: 12px; line-height: 18px; color: C00000; font-weight:bold;  text-decoration: none}
+.redheadulhover3 		{font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 15px; color: #003366; font-weight:bold;  text-decoration: none}
+
+.redheadulhover1:hover 		{text-decoration: underline}
+.redheadulhover2:hover		{text-decoration: underline}
+.redheadulhover3:hover 		{text-decoration: underline}
+
+.redheadulhover2nobold	        {font-family: verdana, arial, helvetica; font-size: 12px; line-height: 18px; color: #C00000; font-weight:normal; text-decoration: none}
+.redheadulhover2nobold:hover	{text-decoration: underline}
+
+.redheadulhover3nobold			{font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 15px; color: #003366; font-weight:normal;  text-decoration: none}
+.redheadulhover3nobold:hover			{text-decoration: underline}
+
+.normal 			{font-family: "verdana", "arial", "helvetica"; font-size: 12px; line-height: 22px; color: 333333}
+.normalblack 		{font-family: verdana, arial, helvetica; font-size: 12px; line-height: 20px; color: 000000}
+
+.small 			{font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 20px; color: 333333}
+.smallblue		{font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 18px; color: 999999}
+.smallgray		{font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 18px; color: 666666}
+.smallgrayest	{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: cccccc}
+
+.navbar			{font-family: verdana, arial, helvetica; font-size: 12px; line-height: 16px; color: #C00000; font-weight: bold; text-decoration: none}
+.navbarul	    {font-family: verdana, arial, helvetica; font-size: 12px; line-height: 16px; color: CC0000; font-weight: bold; text-decoration: underline}
+.navbardim		{font-family: verdana, arial, helvetica; font-size: 12px; line-height: 16px; color: 999999; font-weight: bold; text-decoration: none}
+.navbarlink     {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; font-style: normal; line-height: 18px; font-weight: bold; color: #C00000; text-decoration: none}
+
+.tablehead			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: 666666; font-weight: bold;}
+.tableheadul			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: C00000; font-weight: bold; text-decoration: underline}
+.tableitem			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: #000000; font-weight: normal;}
+.tableitemul			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: C00000; font-weight: normal; text-decoration: underline}
+
+.top			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: C00000; font-weight: normal; text-decoration: normal}
+.copyright		{font-family: verdana, arial, helvetica; font-size: 10px; line-height: 15px; color: #999999; font-weight: normal}
+.FOS_header 	{font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 12px; line-height: 16px; font-weight: normal; color: #C00000; text-decoration: underline}
+.tableitemul			{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color:}
+
+.bluehover1 				{font-family: "Verdana", "Arial", "Helvetica", "sans-serif"; font-size: 14px; line-height: 18px; color: 003399; font-weight: bold; text-decoration: none}
+.bluehover1:hover 			{color: 003399; background-color: FFCC00; font-weight: bold; text-decoration: none}
+
+.bluehover2 				{font-family: verdana, arial, helvetica; font-size: 12px; line-height: 18px; color: 003399; font-weight: bold; text-decoration: none}
+.bluehover2:hover 			{color: 003399; background-color: FFCC00; font-weight: bold; text-decoration: none}
+
+.bluehover2nobold	        {font-family: "verdana", "arial", "helvetica"; font-size: 12px; line-height: 18px; color: 003399; font-weight:normal;  text-decoration: none}
+.bluehover2nobold:hover	    {text-decoration: none; font-family: verdana, arial, helvetica; font-size: 12px; line-height: 18px; color: 3366CC; background-color: ffcc00; font-weight: normal}
+
+
+.bluehover3 				{font-family: verdana, arial, helvetica; font-size: 11px; line-height: 15px; color: 003399; font-weight: bold; text-decoration: none}
+.bluehover3:hover 			{color: 003399; background-color: FFCC00; font-weight: bold; text-decoration: none}
+
+.bluehover3nobold 			{font-family: verdana, arial, helvetica; font-size: 11px; lineheight: 15px; color: 003399; font-weight: normal; text-decoration: none}
+.bluehover3nobold:hover	 	{color: 003399; background-color: FFCC00; fontweight: normal; text-decoration: none}
+.smallred { font-family: "verdana", "arial", "helvetica"; font-size: 11px; line-height: 18px; color: #cc0000}
