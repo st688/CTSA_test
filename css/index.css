@@ -51,6 +51,7 @@ body{
 */
 #MainPic{
    height:500px;
+   position:relative;
 }
 
 #MainPic img{
@@ -60,6 +61,20 @@ body{
    filter:alpha(opacity=80);  /* suck IE6    */
    -moz-opacity:0.8;          /* old Mozilla */
    -khtml-opacity:0.8;        /* old Safari  */
+}
+
+/*
+ 圖片上方的宣傳區
+*/
+#Announcement{
+   margin:0px 100px 0px 0px;
+   padding:10px;
+   top:250px;
+   height:200px;
+   width:100px;
+   position:absolute;
+   background-color:white;
+   border-radius:10px;
 }
 
 /*
