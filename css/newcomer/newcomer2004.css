@@ -1,4 +1,5 @@
 #Content{
+   width:80%;
    margin:0px auto;
 }
 
@@ -7,13 +8,17 @@
 }
 
 #Newcomer-Menu-List li{
+   padding:5px 10px;
+   width:90px;
+
    display:table-cell;
    vertical-align:middle;
-   border-style: none solid;
    color:gray;
    cursor:pointer;
+
+   border-style: none solid;
+   border-width: 1px;
 }
 
 #Newcomer-Container{
-   
 }
