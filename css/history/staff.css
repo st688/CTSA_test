@@ -59,6 +59,7 @@
 }
 /* 調整內文垂直置中用 */
 .Member:before{
+   content:'';
    height:100%;
 }
 
