@@ -55,7 +55,7 @@ body{
 }
 
 #MainPic img{
-   height:400px;
+   height:500px;
    opacity: 0.8;
 
    filter:alpha(opacity=80);  /* suck IE6    */
@@ -68,7 +68,7 @@ body{
 */
 #Announcement{
    padding:10px;
-   top:50%;
+   top:250px;
    left:50%;
    height:200px;
    width:400px;
