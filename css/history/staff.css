@@ -48,8 +48,11 @@
  成員框架
 */
 #Member{
-   width:300px;
+   margin:5px;
+   padding:5px;
+   width:310px;
    display:inline-block;
+   border-radius:5px;
 }
 /*
  描述區
