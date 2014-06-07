@@ -17,13 +17,11 @@
    list-style-type:none;
 }
 #Authors p{
-   padding:5px 0px;
    height:30px;
    font-weight:bold;
    background-color:#ffff99;   
 }
 #Authors li{
-   padding:5px 0px;
    height:30px;
    background-color:#ffffcc;
 }
