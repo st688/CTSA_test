@@ -4,7 +4,18 @@
 }
 
 #Authors{
-
+   width:90px;
+   top:300px;
+   left:50px;
+   position:fixed;
+   text-align:center;
+}
+#Authors p{
+   font-weight:bold;
+   background-color:#ffff99;   
+}
+#Authors li{
+   background-color:#ffffcc;
 }
 
 #Newcomer-Menu-List li{
@@ -20,5 +31,14 @@
    border-width: 1px;
 }
 
+/* 平衡左右的寬度 */
+#Option1{
+   border-width: 0px 1px 0px 2px;
+}
+#Option7{
+   border-width: 0px 2px 0px 1px;
+}
+
 #Newcomer-Container{
+   width:80%;
 }
