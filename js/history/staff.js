@@ -16,26 +16,28 @@ function loadStaff(yeartag) {
                      + "<div class='EnglishTitle'>" + te + "</div>\n"
                      + "</div>\n";
          $('m',$(this)).each(function(){
-            // 生成個人資料
-            html_stack += "<div class='Member'>\n<div class='MemberDescription'>\n";
             c = $(this).find('c').text();
             e = $(this).find('e').text();
             a = $(this).find('a').text();
-            html_stack += "<div class='ChineseName'>" + c + "</div>\n"
-                        + "<div class='EnglishName'>" + e + "</div>\n"
-                        + "<div class='Major'>"       + a + "</div>\n";
             i = $(this).find('i').text();
             em = $(this).find('em').text();
+
+            // 生成個人資料
+            html_stack += "<div class='Member'>\n"
+                        + "<div class='MemberPhoto'>"
+                        + "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
+                        + i + ".jpg\" /></div>\n"
+                        + "<div class='MemberDescription'>\n"
+                        + "<div class='ChineseName'>" + c + "</div>\n"
+                        + "<div class='EnglishName'>" + e + "</div>\n"
+                        + "<div class='Major'>"       + a + "</div>\n";
             html_stack += "<div class='EMail'>";
             if((em == "") && (i != "") ){
                html_stack += "<a href=\"mailto:"+i+"@cornell.edu\">"+i+"@cornell.edu</a>";
             } else {
                html_stack += "<a href=\"mailto:"+em+"\">"+em+"</a>";
             }
-            html_stack += "</div>\n</div>\n<div class='MemberPhoto'>"
-                        + "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
-                        + i + ".jpg\" />"
-                        + "</div>\n</div>\n";
+            html_stack += "</div>\n</div>\n";
          });
          html_stack += "</div>\n";
       });
