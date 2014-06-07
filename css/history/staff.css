@@ -51,6 +51,7 @@
    margin:5px;
    padding:5px;
    width:310px;
+   height:120px;
 
    background-color:#ccc1b2; /* warm gray 3 */
    display:inline-block;
@@ -62,6 +63,8 @@
 #MemberDescription{
    width:200px;
    float:right;
+   display:table-cell;
+   vertical-align:middle;
    word-wrap:break-word;
 }
 /*
@@ -96,4 +99,6 @@
 #MemberPhoto{
    width:100px;
    float:left;
+   display:table-cell;
+   vertical-align:middle;
 }
