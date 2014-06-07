@@ -1,0 +1,17 @@
+.Menu-List{
+   padding:0px;
+}
+
+.Menu-List li{
+   height:50px;
+   width:120px;
+   display:table-cell;
+   color:blue;
+   background-color:white;
+   text-align:center;
+   vertical-align:middle;
+   cursor:pointer;
+
+   border:3px solid;
+   border-radius:10px;
+}
