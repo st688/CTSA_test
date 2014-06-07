@@ -59,6 +59,9 @@
 }
 /* 調整內文垂直置中用 */
 #Member:before{
+   content:'';
+   display:inline-block;
+   vertical-align:middle;
    height:100%;
 }
 
