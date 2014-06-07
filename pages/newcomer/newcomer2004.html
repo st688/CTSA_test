@@ -1,16 +1,43 @@
-<link rel="stylesheet" type="text/css" href="css/newcomer.css" />
-<link rel="stylesheet" type="text/css" href="css/Menu-List.css" />
+<script src="js/newcomer/newcomer2004.js"></script>
+<link rel="stylesheet" type="text/css" href="css/newcomer/newcomer2004.css" />
 
 <div>
-   <p> Newcomer Manual </p>
-   <div id="Newcomer"></div>
+   <p> 新生手冊2004版 </p>
 
-   <ul class="Menu-List">
+   <ul id="Authors">
+      <p>Authors</p>
+      <dl>王凌元</dl>
+      <dl>陳惠如</dl>
+      <dl>朱家欣</dl>
+      <dl>楊璧瑜</dl>
+      <dl>蘇俊達</dl>
+   </ul>
+
+   <ul class="Newcomer-Menu-List">
    <center>
-      <li onclick="return loadContent('newcomer/newcomer2004');">
-         <p>新生手冊2004</p>
+      <li id="Option1" onclick="return loadNewcomer2004('1');">
+         <p>我們的學校<br>康乃爾大學</p>
+      </li>
+      <li id="Option2" onclick="return loadNewcomer2004('2');">
+         <p>赴美前<br>的準備</p>
+      </li>
+      <li id="Option3" onclick="return loadNewcomer2004('3');">
+         <p>台灣 to <br>Ithaca</p>
+      </li>
+      <li id="Option4" onclick="return loadNewcomer2004('4');">
+         <p>剛到美國<br>要做什麼</p>
+      </li>
+      <li id="Option5" onclick="return loadNewcomer2004('5');">
+         <p>找一個適合<br>自己的住處</p>
+      </li>
+      <li id="Option6" onclick="return loadNewcomer2004('6');">
+         <p>為新學期<br>做準備</p>
+      </li>
+      <li id="Option7" onclick="return loadNewcomer2004('7');">
+         <p>食衣住行<br>Ithaca</p>
       </li>
    </center>
    </ul>
 
+   <div id="Newcomer-Container"></div>
 </div>
