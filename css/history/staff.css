@@ -60,7 +60,6 @@
 /* 調整內文垂直置中用 */
 .Member:before{
    content:'';
-   float:left;
    display:inline-block;
    vertical-align:middle;
    height:100%;
@@ -71,7 +70,6 @@
 */
 .MemberDescription{
    width:200px;
-   float:right;
    display:inline-block;
    vertical-align:middle;
    word-wrap:break-word;
@@ -107,7 +105,6 @@
 */
 .MemberPhoto{
    width:100px;
-   float:left;
    display:inline-block;
    vertical-align:middle;
 }
