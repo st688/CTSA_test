@@ -2,9 +2,9 @@
 function loadContent(page) {
    $.get("pages/" + page + ".html", function(data) {
       $('#Content').html(data);
+      // 讓內文頂部與底部稍有距離
+      $('.Content-Fix').css('height','10px');
    });
-   // 讓內文頂部與底部稍有距離
-   $('.Content-Fix').css('height','10px');
 
    // 相當於return true, 回到頂部
 }
