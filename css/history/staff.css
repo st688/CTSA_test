@@ -63,7 +63,7 @@
 #MemberDescription{
    width:200px;
    float:right;
-   display:table-cell;
+   display:inline-block;
    vertical-align:middle;
    word-wrap:break-word;
 }
@@ -99,6 +99,6 @@
 #MemberPhoto{
    width:100px;
    float:left;
-   display:table-cell;
+   display:inline-block;
    vertical-align:middle;
 }
