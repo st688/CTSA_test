@@ -28,6 +28,7 @@ body{
    top:300px;
    right:50px;
    position:fixed;
+   z-index:8000;
 }
 .Badge a img{
    height:50px;
@@ -52,7 +53,6 @@ body{
 #MainPic{
    height:500px;
    position:relative;
-   z-index:0;
 }
 
 #MainPic img{
