@@ -55,6 +55,7 @@
 
    background-color:#ccc1b2; /* warm gray 3 */
    display:inline-block;
+   vertical-align:middle;
    border-radius:5px;
 }
 /*
