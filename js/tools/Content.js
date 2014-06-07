@@ -26,3 +26,10 @@ function addLoadEvent(func) {
       }
    }
 }
+
+// 在新分頁/視窗中開啟連結
+function loadNewScreen(url) {
+   var new_window = window.open();
+   new_window.location= url;
+   return false;
+}
