@@ -17,7 +17,7 @@
 3.Q&A + 找室友 + 認識好同學時間<br>
 一年一次，這次錯過，明年你也不會來啦！千萬不要錯過囉！<br>
 最後，恭喜你們成為康乃爾大學的一員，歡迎你們加入這個大家庭：<br>
-為方便統計參加人數，請至<a href="http://goo.gl/V2x5RB">報名網頁</a>填寫資料<br>
+為方便統計參加人數，請至<a href="#" onclick="return loadNewScreen('http://goo.gl/V2x5RB');">報名網頁</a>填寫資料<br>
 收到報名信件之後我們會回覆邀請函，請各位攜帶邀請函前來喔！<br>
 如果你已經迫不及待想認識Conell的生活，你可以<br>
 <a href="#" onclick="return loadNewScreen('https://www.facebook.com/groups/2241567474/');">加入CTSA的Facebook社團</a><br>
