@@ -55,7 +55,6 @@
 
    background-color:#ccc1b2; /* warm gray 3 */
    display:inline-block;
-   vertical-align:middle;
    border-radius:5px;
 }
 /*
@@ -64,8 +63,6 @@
 #MemberDescription{
    width:200px;
    float:right;
-   display:inline-block;
-   vertical-align:middle;
    word-wrap:break-word;
 }
 /*
@@ -98,8 +95,7 @@
  照片區
 */
 #MemberPhoto{
+   margin:auto 0px;
    width:100px;
    float:left;
-   display:inline-block;
-   vertical-align:middle;
 }
