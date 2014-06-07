@@ -75,6 +75,11 @@ body{
    position:absolute;
    background-color:white;
    border-radius:10px;
+   opacity: 0.8;
+
+   filter:alpha(opacity=80);  /* suck IE6    */
+   -moz-opacity:0.8;          /* old Mozilla */
+   -khtml-opacity:0.8;        /* old Safari  */
 }
 
 /*
