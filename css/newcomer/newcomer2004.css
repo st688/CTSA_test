@@ -9,6 +9,7 @@
 }
 
 #Authors{
+   padding:5px 0px;
    width:90px;
    top:300px;
    left:50px;
@@ -19,12 +20,10 @@
 #Authors p{
    height:30px;
    font-weight:bold;
-   vertical-align:middle;
    background-color:#ffff99;   
 }
 #Authors li{
    height:30px;
-   vertical-align:middle;
    background-color:#ffffcc;
 }
 
