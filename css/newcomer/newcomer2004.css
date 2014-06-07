@@ -1,6 +1,7 @@
 #Content{
    width:80%;
    margin:0px auto;
+   padding:0;
    text-align:center;
 }
 
@@ -13,10 +14,12 @@
    list-style-type:none;
 }
 #Authors p{
+   height:30px;
    font-weight:bold;
    background-color:#ffff99;   
 }
 #Authors li{
+   height:30px;
    background-color:#ffffcc;
 }
 
@@ -33,15 +36,8 @@
    border-width: 1px;
 }
 
-/* 平衡左右的寬度 */
-#Option1{
-   border-width: 0px 1px 0px 2px; !important
-}
-#Option7{
-   border-width: 0px 2px 0px 1px; !important
-}
-
 #Newcomer-Container{
    margin:0px auto;
    width:80%;
+   text-align:justify;
 }
