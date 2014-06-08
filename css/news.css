@@ -11,10 +11,10 @@
 }
 .news{
    left:50%;
-   display:inline-block;
+   display:block;
 }
 .news div{
-   float:left;
+   display:inline-block;
    text-align:left;
 }
 .news_time{
