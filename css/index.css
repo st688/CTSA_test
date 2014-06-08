@@ -34,6 +34,7 @@ body{
    padding:2px 0px;
    clear:both;
    float:right;
+   cursor:pointer;
 }
 .Badge p{
    padding:8px;
@@ -42,10 +43,10 @@ body{
    display:none;
    vertical-align:middle;
 }
-.Badge a:hover p{
+.Badge:hover p{
    display:inline-block;
 }
-.Badge a img{
+.Badge img{
    height:50px;
    display:inline-block;
    vertical-align:middle;
@@ -55,7 +56,7 @@ body{
    -moz-opacity:0.5;          /* old Mozilla */
    -khtml-opacity: 0.5;       /* old Safari  */
 }
-.Badge a:hover img{
+.Badge:hover img{
    height:50px;
    opacity: 1;
 
