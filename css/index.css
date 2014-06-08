@@ -40,6 +40,7 @@ body{
    padding:5px;
    min-width:144px;
    font-size:24px;
+   text-shadow:1px 1px white;
    display:none;
    vertical-align:middle;
 }
