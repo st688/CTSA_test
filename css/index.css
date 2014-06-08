@@ -126,6 +126,7 @@ body{
    -khtml-opacity:0.8;        /* old Safari  */
 }
 #Pop-Screen-Content{
+   padding:10px;
    height:80%;
    width:80%;
    top:50%;
@@ -136,6 +137,7 @@ body{
    vertical-align:middle;
    z-index:10001;
    overflow:auto;
+   border-radius:10px;
 }
 
 #Pop-Screen-Content .Title{

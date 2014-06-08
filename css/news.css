@@ -9,7 +9,11 @@
 #News{
    width:80%;
 }
+/*
+ 其中一則訊息
+*/
 .news{
+   padding:5px 0px;
    left:50%;
    display:block;
 }
