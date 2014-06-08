@@ -30,8 +30,28 @@ body{
    position:fixed;
    z-index:8000;
 }
+.Badge{
+   position:relative;
+   padding:2px 0px;
+   clear:both;
+   float:right;
+}
+.Badge p{
+   padding:10px;
+   min-width:180px;
+   position:absolute;
+   right:0px;
+   font-size:30px;
+   display:none;
+   vertical-align:middle;
+}
+.Badge a:hover p{
+   display:inline-block;
+}
 .Badge a img{
    height:50px;
+   display:inline-block;
+   vertical-align:middle;
    opacity: 0.5;
 
    filter:alpha(opacity=50);  /* suck IE6    */
