@@ -21,9 +21,6 @@ function loadNewsList() {
                      + "</div>\n";
       });
       $('#News').html(html_stack);
-  
-      // 置中
-      $('.news').css('margin-left', -$(".news").width()/2);
    });
 }
 
