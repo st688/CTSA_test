@@ -11,18 +11,26 @@
 }
 /*
  其中一則訊息
+  div news
+    a
+      div news_time
+      div news_title
+      div news_announcer
 */
 .news{
    padding:5px 0px;
    left:50%;
    display:block;
 }
-.news a{
-   text-decoration: none;
-}
 .news div{
    display:inline-block;
    text-align:left;
+}
+.news a{
+   text-decoration:none;
+}
+.news a:hover{
+   background-color:#fbf1e3;
 }
 .news_time{
    width:100px;
