@@ -8,11 +8,10 @@
 */
 #News{
    width:80%;
-   display:table-cell;
 }
 .news{
    left:50%;
-   display:table-cell;
+   display:inline-block;
 }
 .news div{
    float:left;
@@ -26,11 +25,4 @@
 }
 .news_announcer{
    width:200px;
-}
-
-#NewsContent{
-   margin:0px auto;
-   width:80%;
-   text-align:left;
-   display:block;
 }
