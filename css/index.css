@@ -31,16 +31,13 @@ body{
    z-index:8000;
 }
 .Badge{
-   position:relative;
    padding:2px 0px;
    clear:both;
    float:right;
 }
 .Badge p{
-   padding:10px;
+   padding:8px;
    min-width:180px;
-   position:absolute;
-   right:0px;
    font-size:30px;
    display:none;
    vertical-align:middle;
