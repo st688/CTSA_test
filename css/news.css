@@ -13,6 +13,9 @@
    left:50%;
    display:block;
 }
+.news a{
+   text-decoration: none;
+}
 .news div{
    display:inline-block;
    text-align:left;
@@ -21,7 +24,7 @@
    width:100px;
 }
 .news_title{
-   width:600px;
+   width:400px;
 }
 .news_announcer{
    width:200px;
