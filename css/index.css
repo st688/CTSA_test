@@ -37,11 +37,12 @@ body{
    cursor:pointer;
 }
 .Badge p{
-   padding:8px;
-   min-width:180px;
-   font-size:30px;
+   padding:5px;
+   min-width:144px;
+   font-size:24px;
    display:none;
    vertical-align:middle;
+   background-color:white;
 }
 .Badge:hover p{
    display:inline-block;
