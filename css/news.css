@@ -24,7 +24,6 @@
 }
 .news div{
    display:inline-block;
-   text-align:left;
 }
 .news a{
    text-decoration:none;
@@ -33,9 +32,11 @@
    background-color:#fbf1e3;
 }
 .news_time{
+   text-align:left;
    width:100px;
 }
 .news_title{
+   text-align:left;
    width:400px;
 }
 .news_announcer{
