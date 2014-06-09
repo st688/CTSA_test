@@ -26,18 +26,21 @@
  群組
 */
 .Link-Group{
+   padding:10px 0px;
 }
 
 /*
  群組名稱
 */
 .Link-Group-Title{
+   font-size:24px;
 }
 
 /*
  連結
 */
 .Link{
+   padding:5px 0px;
    text-align:left;
 }
 
