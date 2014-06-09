@@ -39,8 +39,10 @@
  中英文職稱
 */
 .ChineseTitle{
+   font-size:24px;
 }
 .EnglishTitle{
+   font-size:20px;
 }
 
 /*
@@ -86,13 +88,16 @@
  中英文姓名
 */
 .ChineseName{
+   font-size:120%;
 }
 .EnglishName{
+   font-size:80%;
 }
 /*
  主修
 */
 .Major{
+   font-style:italic;
 }
 /*
  Email 連結的樣式設定
