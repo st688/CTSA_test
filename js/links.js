@@ -3,7 +3,7 @@ function loadLinks() {
       // 預備輸出的html
       var html_stack = "";
       $('g',data).each(function(){
-         t = $(this).find('t').text(); // 標題
+         t = $(this).find('gt').text(); // 標題
          html_stack += "<div class='Link-Group'>\n"
                      + "<div class='Link-Group-Title'>" + t + "</div>\n";
 

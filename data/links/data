@@ -1,7 +1,7 @@
 <d>
 
 <g>
-   <t>公家機關</t>
+   <gt>公家機關</gt>
    <l>
       <t>台北經濟文化辦事處</t>
       <a>www.tw.org/teco/teco.html</a>
@@ -29,7 +29,7 @@
 </g>
 
 <g>
-   <t>學生組織</t>
+   <gt>學生組織</gt>
    <l>
       <t>大紐約地區臺灣留學生校友會</t>
       <a>www.atany.org</a>
@@ -37,7 +37,7 @@
 </g>
 
 <g>
-   <t>知識學習</t>
+   <gt>知識學習</gt>
    <l>
       <t>科景 (非營利專業科學新聞網站)</t>
       <a>www.sciscape.org</a>
@@ -50,7 +50,7 @@
 </g>
 
 <g>
-   <t>生活情報</t>
+   <gt>生活情報</gt>
    <!-- 食 -->
    <l>
       <t>食譜資訊 (for those who need recipes)</t>

@@ -13,6 +13,7 @@ time_line
 links/
 data:
 <g>  = group         // 群組
+<gt> = group title   // 群組名稱
 <l>  = link          // 連結
 
 news/
