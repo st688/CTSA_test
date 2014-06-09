@@ -12,6 +12,7 @@ time_line
 
 links/
 data:
+<g>  = group         // 群組
 <l>  = link          // 連結
 
 news/
