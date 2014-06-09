@@ -26,7 +26,12 @@
  群組
 */
 .Link-Group{
-   padding:10px 0px;
+   width:45%;
+   padding:10px;
+   display:inline-block;
+   float:left;
+   background-color:#fbf1e3;
+   border-radius:10px;
 }
 
 /*
