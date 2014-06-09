@@ -14,12 +14,13 @@ function loadLinks() {
             a = $(this).find('a').text(); // 網址
 
             // 生成連結
-            html_stack += "<div class='link'>\n"
-                        + "   <div class='title'>" + t + "</div>\n"
-                        + "   <div class='href'><a href=\"#\" onclick=\"return loadNewScreen('http://" + a + "');\">" + a + "</a></div>\n"
+            html_stack += "<div class='Link'>\n"
+                        + "   <div class='Link-Title'>" + t + "</div>\n"
+                        + "   <div class='Link-Href'><a href=\"#\" onclick=\"return loadNewScreen('http://" + a + "');\">" + a + "</a></div>\n"
                         + "</div>\n";
 
          });
+
          html_stack += "</div>\n";
       });
       $('#Links').html(html_stack);

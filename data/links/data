@@ -51,7 +51,7 @@
 
 <g>
    <t>生活情報</t>
-   食
+   <!-- 食 -->
    <l>
       <t>食譜資訊 (for those who need recipes)</t>
       <a>www.ytower.com.tw/recipe/recipe.htm</a>
@@ -62,19 +62,19 @@
       <a>dining.14850.com</a>
    </l>
 
-   住
+   <!-- 住 -->
    <l>
       <t>Ithaca Weather 天氣</t>
       <a>www.cornell.edu/about/status/weather.cfm</a>
    </l>
 
-   行
+   <!-- 行 -->
    <l>
       <t>TCAT 巴士系統(bus syetem serving Cornell community)</t>
       <a>www.tcatbus.com</a>
    </l>
 
-   樂
+   <!-- 樂 -->
    <l>
       <t>Visit Ithaca 當地介紹</t>
       <a>www.visitithaca.com</a>
