@@ -91,10 +91,10 @@
  時間軸背景
 */
 #Slider-Background{
-   height:10px;
+   height:4px;
    width:700px;
    position:absolute;
-   top:20px;
+   top:23px;
    left:15px;
    background-color:#003659;
 
@@ -104,10 +104,10 @@
  時間軸選條
 */
 #Slider{   
-   height:30px;
+   height:20px;
    width:30px;
    position:absolute;
-   top:10px;
+   top:15px;
    left:0px;
    background-color:#008CCC;
 
