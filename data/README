@@ -15,6 +15,8 @@ data:
 <g>  = group         // 群組
 <gt> = group title   // 群組名稱
 <l>  = link          // 連結
+<t>  = title         // 連結名稱
+<a>                  // 連結網址
 
 news/
 data:

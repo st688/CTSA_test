@@ -3,11 +3,51 @@
    text-align:center;
 }
 
+/*
+ staff的架構如下：
+ 　外層框架
+ 　　群組
+ 　　　群組名稱
+ 　　　連結
+ 　　　　連結名稱
+ 　　　　連結網址
+*/
+
+/*
+ 外層框架
+*/
 #Links{
    margin:0px auto;
    width:80%;
 }
 
-#Link{
+/*
+ 群組
+*/
+.Link-Group{
+}
+
+/*
+ 群組名稱
+*/
+.Link-Group-Title{
+}
+
+/*
+ 連結
+*/
+.Link{
    text-align:left;
+}
+
+/*
+ 連結名稱
+*/
+.Link-Title{
+}
+
+/*
+ 連結網址
+*/
+.Link-Href{
 }
