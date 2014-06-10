@@ -24,6 +24,18 @@ function loadLinks() {
          html_stack += "</div>\n";
       });
       $('#Links').html(html_stack);
+
+      // 讓群組方塊緊密疊合
+      var offset = 0;
+      $('.Link-Group').each(function(){
+         if( offset <= 0 ){
+            $(this).css('float','left');
+            offset += $(this).height();
+         }else{
+            $(this).css('float','right');
+            offset -= $(this).height();
+         }
+      });
    });
 }
 
