@@ -1,0 +1,26 @@
+.Form{
+   margin:5px;
+   padding:10px;
+   width:350px;
+   display:inline-block;
+   float:left;
+   background-color:#fbf1e3;
+   border-radius:10px;
+}
+
+.Description{
+   width:120px;
+   text-align:right;
+   display:inline-block;
+}
+
+.TextInput{
+   height:24px;
+   display:inline-block;
+}
+
+.Button{
+   height:24px;
+   width:120px;
+   float:right;
+}

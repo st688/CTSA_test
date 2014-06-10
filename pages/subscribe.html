@@ -1,49 +1,46 @@
-<div class="Title">加入CTSA E-list</div>
+<link rel="stylesheet" type="text/css" href="css/subscribe.css" />
+
+<div class="Title">CTSA 轉信名單 (e-list)</div>
+<div>
+<p>CTSA 轉信名單 (e-list) 是個電子信箱清單，其信箱地址為： ctsa-l@cornell.edu ，其作用相當於廣播。</p>
+<p>加入轉信名單之後，便可以收到所有寄往該清單的信件。換句話說，加入此清單，便可以收到 CTSA 的成員想寄給 CTSA 所有人的訊息。</p>
+<p>同樣的， CTSA 的成員如果想要寄信給 CTSA 的其他人，可以寄信到上述信箱。</p>
+</div>
+
+<div class="Form">
+<div class="Title">加入CTSA e-list</div>
 <form action="https://www.list.cornell.edu:9443/subscribe/subscribe.tml" method="POST">
-   <table border=0 cellspacing=0 cellpadding=3>
-      <tr>
-         <td align="right">
-            Email address:
-         </td>
-         <td>
-            <input type="text" name="email" value="" size=20>
-         </td>
-         <td>
-	    <input type="image" border="0" height="19" width="73" title="subscribe" alt="subscribe" src="https://www.list.cornell.edu:9443/img/english/button_subscribe.gif"  name="subscribe" align="left">
-         </td>
-      </tr>
-      <tr>
-         <td align="right">
-            <I>(required)</I> Your name:
-         </td>
-         <td>
-            <INPUT TYPE="text" name="name" value="" size=20 maxlength=100>
-         </td>
-      </tr>
-   </table>
+   <div>
+      <p class="Description">Email：</p>
+      <input class="TextInput" type="text" name="email" value="" size=20>
+   </div>
+   <div>
+      <p class="Description">姓名（必填）：</p>
+      <input class="TextInput" type="text" name="name" value="" size=20 maxlength=100>
+   </div>
+   <div>
+      <input class="Button" type="submit" name="subscribe" value="加入(subscribe)" alt="加入(subscribe)">
+   </div>
    <input type="hidden" name="list" value="ctsa-l">
    <input type="hidden" name="name_required" value="T">
    <input type="hidden" name="confirm" value="one">
    <input type="hidden" name="showconfirm" value="T">
 </form>
+</div>
 
-<div class="Title">退出CTSA E-list</div>
+<div class="Form">
+<div class="Title">退出CTSA e-list</div>
 <form action="https://www.list.cornell.edu:9443/subscribe/unsubscribe.tml" method="GET">
-   <table border=0 cellspacing=0 cellpadding=3>
-      <tr>
-         <td>
-            Email address:
-         </td>
-         <td>
-            <input type="text" name="email" value="" size=20>
-         </td>
-         <td>
-            <input type="image" border="0" height="19" width="84" title="unsubscribe" alt="unsubscribe" src="https://www.list.cornell.edu:9443/img/english/button_unsubscribe.gif" name="unsubscribe">
-         </td>
-      </tr>
-   </table>
+   <div>
+      <p class="Description">Email：</p>
+      <input class="TextInput" type="text" name="email" value="" size=20>
+   </div>
+   <div>
+      <input class="Button" type="submit" name="unsubscribe" value="退出(unsubscribe)" alt="退出(unsubscribe)">
+   </div>
    <input type="hidden" name="email_notification" value="T">
    <input type="hidden" name="confirm_first" value="T">
    <input type="hidden" name="showconfirm" value="T">
    <input type="hidden" name="lists" value="ctsa-l">
 </form>
+</div>
