@@ -17,7 +17,7 @@ body{
 }
 
 #TopLogo img{
-   max-height:90%;
+   max-height:120px;
    max-width:100%;
    cursor:pointer;
 }
