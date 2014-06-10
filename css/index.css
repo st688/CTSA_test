@@ -167,16 +167,32 @@ p{
  頁尾
 */
 footer{
+   padding:5px;
    min-height:60px;
+   font-size:120%;
 }
 
 footer div{
+   padding:5px;
    color:#ffffff;
 }
 
 #Copyright{
-   height:40px;
-   clear:both;
-   display:table-cell;
+}
+#Contact-Info{
+}
+#Sponsors{
+}
+#Sponsors:before{
+   content:'';
+   height:100%;
+   display:inline-block;
    vertical-align:middle;
+}
+#Sponsors div{
+   display:inline-block;
+   vertical-align:middle;
+}
+.Sponsor img{
+   height:80px;
 }
