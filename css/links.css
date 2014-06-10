@@ -49,7 +49,12 @@
 .Link{
    padding:5px 0px;
    text-align:left;
+   border-radius:5px;
 }
+.Link:hover{
+   background-color:white;
+}
+
 
 /*
  連結名稱
