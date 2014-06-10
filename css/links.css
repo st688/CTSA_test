@@ -19,7 +19,7 @@
 */
 #Links{
    margin:0px auto;
-   width:860px;
+   width:840px;
    display:inline-block;
 }
 
@@ -28,7 +28,7 @@
 */
 .Link-Group{
    margin:5px;
-   padding:10px 5px;
+   padding:10px 5px 5px 5px;
    width:400px;
    display:inline-block;
 
