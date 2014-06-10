@@ -1,6 +1,14 @@
 function initAnnouncement(){
    $.get("data/index/announcement", function(data) {
       $("#Announcement").html(data);
+      // 寬度太窄則置中(Mobile support)
+      if($("#MainPic").width() < 800){
+         if($("#MainPic").width() < 400){
+            $("#Announcement").css('left', 0 );
+         }else{
+            $("#Announcement").css('left', $("#MainPic").width()/2 - 200);
+         }
+      }
    });
    return false;
 }
