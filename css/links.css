@@ -19,7 +19,8 @@
 */
 #Links{
    margin:0px auto;
-   width:840px;
+   width:100%;
+   max-width:840px;
    display:inline-block;
 }
 
@@ -29,7 +30,8 @@
 .Link-Group{
    margin:5px;
    padding:5px;
-   width:400px;
+   width:100%;
+   max-width:400px;
    display:inline-block;
 
    background-color:#fbf1e3;
