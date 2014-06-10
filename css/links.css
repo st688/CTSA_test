@@ -28,7 +28,7 @@
 */
 .Link-Group{
    margin:5px;
-   padding:10px;
+   padding:10px 5px;
    width:400px;
    display:inline-block;
 
@@ -47,7 +47,7 @@
  連結
 */
 .Link{
-   padding:5px 0px;
+   padding:5px;
    text-align:left;
    border-radius:5px;
 }
