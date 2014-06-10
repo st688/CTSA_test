@@ -3,6 +3,7 @@
 }
 
 .Menu-List li{
+   margin:10px;
    height:50px;
    width:120px;
    display:table-cell;
