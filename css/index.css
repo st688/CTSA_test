@@ -12,6 +12,7 @@ body{
 #TopLogo{
    padding:10px 0px;
    max-height:140px;
+   display:block;
    background-color:white;
    text-align:center;
 }
