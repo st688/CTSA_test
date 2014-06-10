@@ -12,13 +12,13 @@ body{
 #TopLogo{
    padding:10px 0px;
    max-height:140px;
-   max-width:100%;
    background-color:white;
    text-align:center;
 }
 
 #TopLogo img{
    max-height:90%;
+   max-width:100%;
    cursor:pointer;
 }
 
