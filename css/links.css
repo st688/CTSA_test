@@ -28,7 +28,7 @@
 */
 .Link-Group{
    margin:5px;
-   padding:10px 5px 5px 5px;
+   padding:5px;
    width:400px;
    display:inline-block;
 
@@ -40,6 +40,7 @@
  群組名稱
 */
 .Link-Group-Title{
+   padding:5px 0px;
    font-size:18px;
 }
 
