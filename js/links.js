@@ -36,7 +36,6 @@ function loadLinks() {
             offset -= $(this).height();
          }
       });
-      $('.Link-Group').css('width', $('#Links').width()/2 - 10);
    });
 }
 
