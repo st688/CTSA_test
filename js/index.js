@@ -9,7 +9,7 @@ function initAnnouncement(){
             $("#Announcement").css('left', $("#MainPic").width()/2 - 200);
          }
       }
-      if($("#MainPic").height() < 400){
+      if($("#MainPic img").height() < 400){
          $("#Announcement").css('top', 0 )
                            .css('height', $("#MainPic").height() );
       }
