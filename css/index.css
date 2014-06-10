@@ -11,8 +11,8 @@ body{
 */
 #TopLogo{
    padding:10px 0px;
-   max-height:140px;
-   display:block;
+   height:140px;
+   width:100%;
    background-color:white;
    text-align:center;
 }
@@ -71,12 +71,12 @@ body{
  首頁圖片 
 */
 #MainPic{
-   max-height:500px;
+   height:500px;
    position:relative;
 }
 
 #MainPic img{
-   max-height:500px;
+   height:500px;
    opacity: 0.8;
 
    filter:alpha(opacity=80);  /* suck IE6    */
