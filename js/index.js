@@ -11,7 +11,7 @@ function initAnnouncement(){
       }
       if($("#MainPic img").height() < 400){
          $("#Announcement").css('top', 0 )
-                           .css('height', $("#MainPic").height() );
+                           .css('height', $("#MainPic img").height() );
       }
    });
    return false;
