@@ -11,14 +11,14 @@ body{
 */
 #TopLogo{
    padding:10px 0px;
-   height:140px;
-   width:100%;
+   max-height:140px;
+   max-width:100%;
    background-color:white;
    text-align:center;
 }
 
 #TopLogo img{
-   height:90%;
+   max-height:90%;
    cursor:pointer;
 }
 
