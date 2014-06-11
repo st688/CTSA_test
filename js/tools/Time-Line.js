@@ -15,7 +15,7 @@ function setTimeLine(yr){
    $("#Dec" + v ).css('color','red'); // 改選中者為紅色
    var html_stack = "<center><div id='Slider-Container'>"
                   + "<center><div id='Slider-Background'></div></center>"
-                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\" onclick=\"return false\"><div id='Slider'></div></a>"
+                  + "<a href=\"#\" onmousedown=\"fMouseDown(event);\" onclick=\"return false\" ontouchstart=\"fTouchStart(event)\"><div id='Slider'></div></a>"
                   + "</div><center>\n"
                   + "<ul id='Yr-Container'><center>";
    
@@ -179,3 +179,70 @@ function fMouseUp(e){
    triggerYearChosen(current_year);
    return false;
 }
+
+// 行動裝置支援
+// 觸控開始
+function fTouchStart(e){
+   var offset_sl = $("#Slider").offset();            // Slider 絕對座標
+   var offset_bg = $("#Slider-Background").offset(); // Slider Background絕對座標
+   clientX_down  = e.changedTouches[0].pageX;
+   slider_left   = $("#Slider").position().left;
+
+   switch( time_line_style ){
+      case 0:
+         dx_feasible_min = offset_bg.left            - offset_sl.left - width_sl/2 
+                         + year_min * width_yr;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl/2
+                         - (9-year_max) * width_yr;
+         break;
+      case 1:
+         dx_feasible_min = offset_bg.left            - offset_sl.left 
+                         + year_min * width_yr;
+         dx_feasible_max = offset_bg.left + width_bg - offset_sl.left - width_sl 
+                         - (9-year_max) * width_yr;
+         break;
+   }
+
+   document.ontouchmove = fTouchMove;
+   document.ontouchend  = fTouchEnd;   
+   return false;
+}
+
+// 觸控拖曳
+function fTouchMove(e){
+   var dx = e.changedTouches[0].pageX - clientX_down;
+   if( dx < dx_feasible_min ){
+      dx = dx_feasible_min;
+   }
+   if( dx > dx_feasible_max ){
+      dx = dx_feasible_max;
+   }
+   $("#Slider").css('left', slider_left + dx);
+   return false;
+}
+
+
+// 觸控結束
+function fTouchEnd(e){
+   var now_left  = $("#Slider").position().left;
+   var min_left  = 0;
+   switch( time_line_style ){
+      case 0:
+         min_left = 0;
+         break;
+      case 1:
+         min_left = 15;
+         break;
+   }
+   
+   var round_num = Math.round((now_left - min_left)/width_yr);
+
+   $("#Slider").css('left', min_left + round_num * width_yr)
+   document.ontouchmove = null;
+   document.ontouchend  = null;
+
+   current_year = Math.floor(current_year / 10)*10 + round_num;
+   triggerYearChosen(current_year);
+   return false;
+}
+
