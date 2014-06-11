@@ -30,13 +30,13 @@ function setTimeLine(yr){
           ( (time_line_style == 1) && ((i - 1) == year_max) ) ){
          html_stack += (dec + i);
       }
-      html_stack += "</li>\n";
+      html_stack += "</li>";
    }
    html_stack += "<li class='Yr'>";
    if( (time_line_style == 1) && (year_max == 9) ){
       html_stack += (dec + 10);
    }
-   html_stack += "</li>\n</center></ul>";
+   html_stack += "</li></center></ul>";
    $('#Time-Line-Yr').html(html_stack);
 
    // 更新長度參數

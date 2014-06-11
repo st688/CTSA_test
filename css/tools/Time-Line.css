@@ -118,7 +118,6 @@
 */
 #Yr-Container{
    height:50px;
-   width:100%;
    margin:0;
    padding:0;
    list-style-type:none;
@@ -129,6 +128,6 @@
 .Yr{
    width:9%;
    max-width:70px;
-   display:table-cell;
+   display:inline-block;
    vertical-align:middle;
 }
