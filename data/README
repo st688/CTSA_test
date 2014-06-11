@@ -24,7 +24,8 @@ data:
 <t>                  // title 消息標題
 <m>                  // time 發佈時間
 <a>                  // anouncer 發佈人
-<f>                  // filename 對應 html 片段檔案
+<f>                  // filename 對應 html 片段檔案名，下載用檔案以"file"開頭
+                     // 檔案全名為"s" + 月 + 日 + "_" + 檔案名
 
 staff/
 years:

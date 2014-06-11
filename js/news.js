@@ -16,7 +16,7 @@ function loadNewsList() {
          html_stack += "<div class='news'>\n" 
                      + "<a href=\"#\" onclick='return ";
          // 測試是否為一般檔案
-         if( f.indexOf(".") > -1 ){
+         if( f.indexOf("file") > -1 ){
             // 若是，提供下載
             html_stack += "loadNewScreen";
          }else{
