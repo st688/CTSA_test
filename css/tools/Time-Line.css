@@ -84,7 +84,8 @@
 */
 #Slider-Container{
    height:50px;
-   width:730px;
+   width:100%;
+   max-width:730px;
    position:relative;
 }
 /*
@@ -92,7 +93,7 @@
 */
 #Slider-Background{
    height:4px;
-   width:700px;
+   max-width:700px;
    position:absolute;
    top:23px;
    left:15px;
@@ -125,7 +126,8 @@
  年份項目
 */
 .Yr{
-   width:70px;
+   width:9%;
+   max-width:70px;
    display:table-cell;
    vertical-align:middle;
 }
