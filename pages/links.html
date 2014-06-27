@@ -1,5 +1,9 @@
-<script src="js/tools/Web-Jump.js"></script>
-<script type="text/javascript">webJump('links')</script>
+<script type="text/javascript">   
+   if(typeof(__INDEX__) == "undefined"){
+      window.location = 'cornelltsa.org';
+      loadContent('links');
+   }
+</script>
 
 <script src="js/links.js"></script>
 <link rel="stylesheet" type="text/css" href="css/links.css" />
