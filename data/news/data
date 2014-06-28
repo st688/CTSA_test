@@ -54,4 +54,18 @@
       <a>2012-13 CTSA staff</a>
       <f>pickup</f>
    </e>
+
+   <e>
+      <t>CTSA 2012 新生說明會</t>
+      <m>04/27/2012</m>
+      <a>2011-12 CTSA staff</a>
+      <f>new_student</f>
+   </e>
+
+   <e>
+      <t>CTSA 2012 Farewell Party</t>
+      <m>04/27/2012</m>
+      <a>2011-12 CTSA staff</a>
+      <f>farewell</f>
+   </e>
 </d>
