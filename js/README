@@ -1,0 +1,53 @@
+Last update: 2014/07/27 by 曾士豪 Tseng Shih-Hao, st688@cornell.edu
+
+js 資料夾架構與函數如下：
+檔案代表對應的網頁，如 pages 下有 history.html，則該網頁用到的 js 就是
+本資料夾下的 history.js
+
+history/
+  staff.js:
+    loadStaff(yeartag);
+    # 此函數將讀取 yeartag 所代表的 CTSA staff 資料並顯示
+    # yeartag 是個字串 s(年份)_(下一年份個位數) 比如 2014~2015 的 CTSA 
+    # staff yeartag 就是 s2014_5
+
+    initStaff();
+    # 初始化，監聽來自時間軸選擇的 e_YearChosen 事件，將選到的年份換成
+    # yeartag，並呼叫 loadStaff 將資料顯示
+
+newcomer/
+  newcomer2014.js:
+    loadNewcomer2004(page);
+    # 此函數會把 2004 手冊版的頁面讀入顯示，並將被選者換成紅色
+    # page 是個數字，比如 1 就會去 data/newcomer/n2004/page1 檔案讀取
+    # 資料
+
+tools/
+  # 此資料夾包含各網頁會用到的工具函數
+  Content.js:
+  # 包含 index.html 整理內文區的函數
+    loadContent(page);
+    # 切換內文
+    # page 是個字串，比如 'history'，會讀取 pages/history.html
+
+    addLoadEvent(func);
+    # 增加初次載入頁面要做的工作
+    # func 是函數，會將該函數列入初次載入時要做的事情
+    # 比如說 addLoadEvent(initStaff());
+
+    loadNewScreen(url)
+    # 在新分頁/視窗中開啟連結
+    # url 是個字串，即連結的網址，如 http://cornelltsa.org
+    # 注意 url 是相對位置，所以要開啟網頁務必加上通訊協定，如 http://
+
+  Pop-Screen.js:
+    # 
+
+  Time-Line.js:
+  Top-Bar.js:
+  Web-Jump.js:
+    
+history.js:
+index.js:
+link.js:
+news.js:
