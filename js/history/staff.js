@@ -20,16 +20,16 @@ function loadStaff(yeartag) {
             e  = $(this).find('e').text();
             a  = $(this).find('a').text();
             i  = $(this).find('i').text();
-            fb = $(this).find('fb').text();
+            on = $(this).find('on').text();
             em = $(this).find('em').text();
 
             // 生成個人資料
             html_stack += "<div class='Member'>\n"
                         + "<div class='MemberPhoto'>";
 
-            if(fb != ""){
-               // 使用 fb 照片
-               html_stack += "<img height=80 width=80 src=\"" + fb + "\" /></div>\n"
+            if(on != ""){
+               // 使用網路照片
+               html_stack += "<img height=80 width=80 src=\"" + on + "\" /></div>\n"
             } else {
                html_stack += "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
                            + i + ".jpg\" /></div>\n"
