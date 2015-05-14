@@ -29,7 +29,7 @@ function loadStaff(yeartag) {
 
             if(on != ""){
                // 使用網路照片
-               html_stack += "<img height=80 width=80 src=\"" + on + "\" /></div>\n"
+               html_stack += "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"" + on + "\" /></div>\n"
             } else {
                html_stack += "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
                            + i + ".jpg\" /></div>\n"
