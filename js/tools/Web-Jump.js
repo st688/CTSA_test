@@ -5,6 +5,7 @@ var __INDEX__ = true;
 var hash = location.hash;
 if(hash.length > 1){
    hash = hash.substring(1);
+   location.hash = '';
    if(hash[0] == '?'){
       // #? 彈出視窗
       popScreen(hash.substring(1));
@@ -12,5 +13,4 @@ if(hash.length > 1){
       // # 切換內文
       loadContent(hash);
    }
-   location.hash = '';
 }
