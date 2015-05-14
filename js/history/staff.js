@@ -29,9 +29,9 @@ function loadStaff(yeartag) {
 
             if(fb != ""){
                // 使用 fb 照片
-               html_stack += "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"" + fb + "\" /></div>\n"
+               html_stack += "<img height=80 width=80 src=\"" + fb + "\" /></div>\n"
             } else {
-               html_stack += "<img height=80 width=80 onerror=\"this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
+               html_stack += "<img height=80 width=80 onerror=\"this.onerror=null;this.src='images/history/staff/noImg.jpg'\" src=\"images/history/staff/" 
                            + i + ".jpg\" /></div>\n"
             }
                         
